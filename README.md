@@ -23,5 +23,4 @@ Open http://localhost:4321
 - Blog with Markdown content
 - Light/dark theme support
 - SEO optimized (sitemap, Open Graph, Twitter Cards)
-- Docker containerized deployment
-- CI/CD via GitHub Actions
+- Automatic deployment to GitHub Pages

@@ -1,82 +1,54 @@
-name: Manaira Website CI
+# Deploy Astro site to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  docker-website:
+  build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Login to Registry
-        uses: docker/login-action@v3
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-
-      - name: Set Short SHA
-        id: shashort
-        run: |
-          if [ "${{ github.event_name }}" = "push" ]; then
-            if [[ "${GITHUB_REF}" == refs/tags/* ]]; then
-              TAG_NAME=${GITHUB_REF#refs/tags/}
-              echo "SHORT_SHA=$TAG_NAME" >> $GITHUB_OUTPUT
-            else
-              SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
-              echo "SHORT_SHA=$SHORT_SHA" >> $GITHUB_OUTPUT
-            fi
-          elif [ "${{ github.event_name }}" = "pull_request" ]; then
-            SHORT_SHA=$(echo "${{ github.event.pull_request.head.sha }}" | cut -c1-7)
-            echo "SHORT_SHA=$SHORT_SHA" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Build and push website
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          push: ${{ github.event_name != 'pull_request' }}
-          tags: |
-            docker.io/manaira/website:${{ steps.shashort.outputs.SHORT_SHA }}
-            docker.io/manaira/website:latest
-
-    outputs:
-      SHORT_SHA: ${{ steps.shashort.outputs.SHORT_SHA }}
-
-  deploy-website:
-    runs-on: ubuntu-latest
-    needs: [ docker-website ]
-    if: github.event_name != 'pull_request'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Copy docker-compose file
-        uses: appleboy/scp-action@v0.1.7
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          host: ${{ secrets.DEPLOY_HOST }}
-          username: ${{ secrets.DEPLOY_USER }}
-          key: ${{ secrets.DEPLOY_KEY }}
-          source: "docker-compose.yaml"
-          target: "/root/website/"
+          node-version: "20"
+          cache: "npm"
 
-      - name: Deploy website containers
-        uses: appleboy/ssh-action@v1.0.3
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Astro site
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          host: ${{ secrets.DEPLOY_HOST }}
-          username: ${{ secrets.DEPLOY_USER }}
-          key: ${{ secrets.DEPLOY_KEY }}
-          script: |
-            cd /root/website
-            export TAG=${{ needs.docker-website.outputs.SHORT_SHA }}
-            docker compose -f docker-compose.yaml pull
-            docker compose -f docker-compose.yaml up -d
-            docker system prune -f
+          path: ./dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

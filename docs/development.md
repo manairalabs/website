@@ -4,7 +4,6 @@
 
 - Node.js 20+
 - npm
-- Docker (optional, for container builds)
 
 ## Local Development
 
@@ -36,26 +35,6 @@ Static files will be generated in the `dist/` folder.
 npm run preview
 ```
 
-## Docker
-
-### Build Image
-
-```bash
-docker build -t manaira/website .
-```
-
-### Run Container
-
-```bash
-docker run -p 3000:80 manaira/website
-```
-
-Or using docker-compose:
-
-```bash
-docker compose up -d
-```
-
 ## Project Structure
 
 ```
@@ -79,9 +58,7 @@ docker compose up -d
 │       └── blog/               # Blog pages
 ├── .github/
 │   └── workflows/
-│       └── ci.yaml     # CI/CD pipeline
-├── Dockerfile
-├── docker-compose.yaml
+│       └── ci.yaml     # GitHub Pages deployment
 ├── astro.config.mjs
 └── package.json
 ```
@@ -104,18 +81,15 @@ category: "Insights"
 Your content here...
 ```
 
-## CI/CD
+To save as draft (not published), add `draft: true` to frontmatter.
 
-The GitHub Actions workflow (`.github/workflows/ci.yaml`) automatically:
+## Deployment
 
-1. Builds the Docker image on push to `main`
-2. Pushes to Docker Hub (`docker.io/manaira/website`)
-3. Deploys to production server via SSH
+The site is automatically deployed to GitHub Pages on push to `main`.
 
-### Required Secrets
+The GitHub Actions workflow (`.github/workflows/ci.yaml`):
+1. Installs dependencies
+2. Builds the Astro site
+3. Deploys to GitHub Pages
 
-- `DOCKER_USERNAME` - Docker Hub username
-- `DOCKER_PASSWORD` - Docker Hub password/token
-- `DEPLOY_HOST` - Production server hostname
-- `DEPLOY_USER` - SSH username
-- `DEPLOY_KEY` - SSH private key
+No secrets required - uses GitHub's built-in Pages permissions.
