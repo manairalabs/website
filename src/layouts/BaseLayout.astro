@@ -61,6 +61,21 @@ const siteUrl = 'https://manairalabs.com';
     <!-- Page-specific styles -->
     <slot name="head" />
 
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Manaira Labs",
+      "url": siteUrl,
+      "logo": `${siteUrl}/icons/logo.png`,
+      "description": "AI Products & Solutions for Business",
+      "sameAs": [
+        "https://linkedin.com/company/manairalabs",
+        "https://twitter.com/manairalabs",
+        "https://instagram.com/manairalabs"
+      ]
+    })} />
+
     <!-- Theme initialization -->
     <script is:inline>
         (function() {
