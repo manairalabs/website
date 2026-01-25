@@ -1,0 +1,580 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Projects | Manaira Labs - AI Solutions Portfolio"
+  description="Explore our portfolio of AI-powered solutions - from intelligent customer service automation to document processing and workforce management."
+>
+  <link rel="stylesheet" href="/styles/projects.css" slot="head" />
+
+  <!-- Projects Hero -->
+  <section class="projects-hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">OUR WORK</span>
+      </div>
+      <h1 class="projects-title">
+        <span class="title-line">Ideas <span class="text-gradient">Engineered</span></span>
+        <span class="title-line">Into Reality</span>
+      </h1>
+      <p class="projects-subtitle">
+        From internal projects to commercial products. See how we transform ideas into AI solutions that deliver results.
+      </p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section section-products-showcase">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">OUR PRODUCTS</span>
+        <h2 class="section-title">Commercial AI Products</h2>
+        <p class="section-desc">These projects have evolved into commercial products available for your business.</p>
+      </div>
+
+      <div class="products-showcase-grid">
+        <!-- BicaraAI Product -->
+        <a href="/products/bicara" class="product-showcase-card">
+          <div class="product-showcase-badge">PRODUCT</div>
+          <div class="product-showcase-image">
+            <img src="/images/bicara.ai/dashboard.png" alt="BicaraAI Dashboard" loading="lazy">
+          </div>
+          <div class="product-showcase-content">
+            <span class="product-showcase-category">AI Customer Service</span>
+            <h3>BicaraAI</h3>
+            <p>Omnichannel AI customer service that handles 80% of inquiries automatically. WhatsApp, Instagram, Messenger, and more.</p>
+            <span class="product-showcase-cta">View Product →</span>
+          </div>
+        </a>
+
+        <!-- Manaira Team Product -->
+        <a href="/products/team" class="product-showcase-card">
+          <div class="product-showcase-badge">PRODUCT</div>
+          <div class="product-showcase-image">
+            <img src="/images/team/home.png" alt="Manaira Team Dashboard" loading="lazy">
+          </div>
+          <div class="product-showcase-content">
+            <span class="product-showcase-category">Workforce Management</span>
+            <h3>Manaira Team</h3>
+            <p>AI-powered workforce management for retail and F&B. Shift scheduling, task tracking, and inventory with AI insights.</p>
+            <span class="product-showcase-cta">View Product →</span>
+          </div>
+        </a>
+
+        <!-- Manaira Suite Product -->
+        <a href="/products/suite" class="product-showcase-card coming-soon">
+          <div class="product-showcase-badge">COMING SOON</div>
+          <div class="product-showcase-image placeholder">
+            <div class="placeholder-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-showcase-content">
+            <span class="product-showcase-category">Business Management</span>
+            <h3>Manaira Suite</h3>
+            <p>All your business apps in one place. Sales, inventory, HR, accounting - plus AI employees that work for you.</p>
+            <span class="product-showcase-cta">Join Waitlist →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="section section-projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">CLIENT & INTERNAL PROJECTS</span>
+        <h2 class="section-title">More AI Solutions We've Built</h2>
+      </div>
+
+      <!-- Cymbidium -->
+      <article class="project-card" id="cymbidium">
+        <div class="project-header">
+          <div class="project-meta">
+            <span class="project-number">01</span>
+            <span class="project-category">Document Intelligence</span>
+          </div>
+          <h2 class="project-title">Cymbidium</h2>
+          <p class="project-tagline">Documents That Talk Back</p>
+        </div>
+
+        <div class="project-content">
+          <div class="project-description">
+            <p>Buried in paperwork? <strong>Cymbidium</strong> transforms static documents into interactive knowledge. Upload contracts, reports, invoices—any document—and watch AI extract the data you need.</p>
+            <p>Stop manually hunting through PDFs. Start having conversations with your documents.</p>
+
+            <div class="project-features">
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14,2 14,8 20,8"/>
+                  </svg>
+                </span>
+                <span>Smart Document Upload</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="M21 21l-4.35-4.35"/>
+                  </svg>
+                </span>
+                <span>Intelligent Extraction</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </span>
+                <span>Chat with Documents</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"/>
+                  </svg>
+                </span>
+                <span>System Integration</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-gallery">
+            <div class="gallery-main">
+              <img src="/images/cymbidium/extraction.png" alt="Document Extraction" class="gallery-image active" data-index="0" loading="lazy">
+              <img src="/images/cymbidium/chat.png" alt="Chat Interface" class="gallery-image" data-index="1" loading="lazy">
+            </div>
+            <div class="gallery-thumbs">
+              <button class="thumb active" data-index="0"><img src="/images/cymbidium/extraction.png" alt="Extraction" loading="lazy"></button>
+              <button class="thumb" data-index="1"><img src="/images/cymbidium/chat.png" alt="Chat" loading="lazy"></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Accounting -->
+      <article class="project-card" id="accounting">
+        <div class="project-header">
+          <div class="project-meta">
+            <span class="project-number">02</span>
+            <span class="project-category">Financial Solutions</span>
+          </div>
+          <h2 class="project-title">Accounting</h2>
+          <p class="project-tagline">Financial Clarity, Simplified</p>
+        </div>
+
+        <div class="project-content">
+          <div class="project-description">
+            <p>Aplikasi akunting yang mengubah kompleksitas keuangan menjadi kejelasan. Fitur lengkap mulai dari <strong>Jurnal</strong>, <strong>Buku Besar</strong>, hingga <strong>Laporan Keuangan</strong>—semua dalam satu platform yang intuitif.</p>
+            <p>Bonus: Bank Statement Conversion yang menghemat berjam-jam waktu data entry.</p>
+
+            <div class="project-features">
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                  </svg>
+                </span>
+                <span>Journal Entries</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="8" y1="6" x2="21" y2="6"/>
+                    <line x1="8" y1="12" x2="21" y2="12"/>
+                    <line x1="8" y1="18" x2="21" y2="18"/>
+                    <line x1="3" y1="6" x2="3.01" y2="6"/>
+                    <line x1="3" y1="12" x2="3.01" y2="12"/>
+                    <line x1="3" y1="18" x2="3.01" y2="18"/>
+                  </svg>
+                </span>
+                <span>General Ledger</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7,10 12,15 17,10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                  </svg>
+                </span>
+                <span>PDF Export</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                    <line x1="1" y1="10" x2="23" y2="10"/>
+                  </svg>
+                </span>
+                <span>Bank Statement Conversion</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-gallery">
+            <div class="gallery-main">
+              <img src="/images/accounting/jurnal.png" alt="Journal Entry" class="gallery-image active" data-index="0" loading="lazy">
+              <img src="/images/accounting/neraca.png" alt="Balance Sheet" class="gallery-image" data-index="1" loading="lazy">
+            </div>
+            <div class="gallery-thumbs">
+              <button class="thumb active" data-index="0"><img src="/images/accounting/jurnal.png" alt="Journal" loading="lazy"></button>
+              <button class="thumb" data-index="1"><img src="/images/accounting/neraca.png" alt="Balance Sheet" loading="lazy"></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SpecialCare -->
+      <article class="project-card project-video" id="special-care">
+        <div class="project-header">
+          <div class="project-meta">
+            <span class="project-number">03</span>
+            <span class="project-category">Healthcare Technology</span>
+          </div>
+          <h2 class="project-title">SpecialCare</h2>
+          <p class="project-tagline">Every Child's Progress, Beautifully Tracked</p>
+        </div>
+
+        <div class="project-content">
+          <div class="project-description">
+            <p>Aplikasi yang dirancang dengan hati untuk para terapis, guru, dan orang tua anak berkebutuhan khusus. <strong>SpecialCare</strong> membantu mencatat setiap langkah perkembangan.</p>
+            <p>Karena setiap kemajuan layak untuk dirayakan dan didokumentasikan.</p>
+
+            <div class="project-features">
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                    <line x1="12" y1="19" x2="12" y2="23"/>
+                    <line x1="8" y1="23" x2="16" y2="23"/>
+                  </svg>
+                </span>
+                <span>Voice AI Interaction</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                  </svg>
+                </span>
+                <span>Progress Tracking</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                </span>
+                <span>Multi-User Support</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                  </svg>
+                </span>
+                <span>Development Reports</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-video-container">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/rRnhHwNOgU8" title="SpecialCare Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- AI Employee Training -->
+      <article class="project-card project-video" id="ai-training">
+        <div class="project-header">
+          <div class="project-meta">
+            <span class="project-number">04</span>
+            <span class="project-category">Enterprise Training</span>
+          </div>
+          <h2 class="project-title">AI Employee Training</h2>
+          <p class="project-tagline">Onboarding at the Speed of AI</p>
+        </div>
+
+        <div class="project-content">
+          <div class="project-description">
+            <p>Traditional training is slow, expensive, and inconsistent. <strong>AI Employee Training</strong> revolutionizes how companies onboard and upskill their workforce.</p>
+            <p>New hires get up to speed faster. Existing employees continuously develop. Your training scales without limits.</p>
+
+            <div class="project-features">
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                    <line x1="12" y1="19" x2="12" y2="23"/>
+                    <line x1="8" y1="23" x2="16" y2="23"/>
+                  </svg>
+                </span>
+                <span>Voice AI Interaction</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                  </svg>
+                </span>
+                <span>Personalized Learning</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </span>
+                <span>Instant Feedback</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="20" x2="12" y2="10"/>
+                    <line x1="18" y1="20" x2="18" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="16"/>
+                  </svg>
+                </span>
+                <span>Progress Analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-video-container">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/HJJz1mrTOMM" title="AI Employee Training Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- AI Photobooth -->
+      <article class="project-card project-video" id="ai-photobooth">
+        <div class="project-header">
+          <div class="project-meta">
+            <span class="project-number">05</span>
+            <span class="project-category">Creative AI</span>
+          </div>
+          <h2 class="project-title">AI Photobooth</h2>
+          <p class="project-tagline">Where Reality Meets Imagination</p>
+        </div>
+
+        <div class="project-content">
+          <div class="project-description">
+            <p>Transform any event into an unforgettable experience. <strong>AI Photobooth</strong> uses cutting-edge generative AI to create stunning, personalized photos.</p>
+            <p>Corporate events, weddings, product launches—give your attendees something truly unique.</p>
+
+            <div class="project-features">
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                    <polyline points="21,15 16,10 5,21"/>
+                  </svg>
+                </span>
+                <span>AI Image Generation</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                    <polyline points="16,6 12,2 8,6"/>
+                    <line x1="12" y1="2" x2="12" y2="15"/>
+                  </svg>
+                </span>
+                <span>Instant Sharing</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </span>
+                <span>Custom Themes</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                </span>
+                <span>Event Branding</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-video-container">
+            <div class="video-wrapper video-short">
+              <iframe src="https://www.youtube.com/embed/7OlzStRgeB0" title="AI Photobooth Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Demand Forecasting -->
+      <article class="project-card" id="forecast-dashboard">
+        <div class="project-header">
+          <div class="project-meta">
+            <span class="project-number">06</span>
+            <span class="project-category">Business Analytics</span>
+          </div>
+          <h2 class="project-title">Demand Forecasting</h2>
+          <p class="project-tagline">Predict Tomorrow's Demand Today</p>
+          <a href="/forecast_dashboard.html" target="_blank" class="project-link">
+            <span>View Dashboard</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15,3 21,3 21,9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="project-content">
+          <div class="project-description">
+            <p>Stop guessing, start forecasting. <strong>Demand Forecasting Dashboard</strong> applies multiple statistical methods to predict product demand with precision.</p>
+            <p>Compare forecasting methods side-by-side and get AI-powered recommendations for the best approach.</p>
+
+            <div class="project-features">
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 3v18h18"/>
+                    <path d="M18 17V9"/>
+                    <path d="M13 17V5"/>
+                    <path d="M8 17v-3"/>
+                  </svg>
+                </span>
+                <span>Multiple Forecasting Methods</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                </span>
+                <span>Real-time Calculations</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22,4 12,14.01 9,11.01"/>
+                  </svg>
+                </span>
+                <span>Error Metrics Analysis</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                  </svg>
+                </span>
+                <span>AI Recommendations</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-gallery">
+            <div class="gallery-main">
+              <img src="/images/forecast/summary.png" alt="Forecast Summary" class="gallery-image active" data-index="0" loading="lazy">
+              <img src="/images/forecast/chart.png" alt="Forecast Charts" class="gallery-image" data-index="1" loading="lazy">
+              <img src="/images/forecast/error.png" alt="Error Analysis" class="gallery-image" data-index="2" loading="lazy">
+            </div>
+            <div class="gallery-thumbs">
+              <button class="thumb active" data-index="0"><img src="/images/forecast/summary.png" alt="Summary" loading="lazy"></button>
+              <button class="thumb" data-index="1"><img src="/images/forecast/chart.png" alt="Charts" loading="lazy"></button>
+              <button class="thumb" data-index="2"><img src="/images/forecast/error.png" alt="Error" loading="lazy"></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section-cta" id="contact">
+    <div class="cta-bg">
+      <div class="cta-grid"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content">
+        <span class="section-label">YOUR PROJECT</span>
+        <h2 class="cta-title">
+          <span class="line">Ready to build</span>
+          <span class="line">something amazing?</span>
+        </h2>
+        <p class="cta-desc">
+          Every project in our portfolio started with a conversation. Let's start yours.
+        </p>
+
+        <form class="cta-form" id="contactForm" action="https://formspree.io/f/mqardgdj" method="POST">
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <div class="field-line"></div>
+            </div>
+            <div class="form-field">
+              <input type="email" name="email" placeholder="Email" required>
+              <div class="field-line"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" name="company" placeholder="Company">
+              <div class="field-line"></div>
+            </div>
+            <div class="form-field">
+              <select name="interest" required>
+                <option value="" disabled selected>What do you need?</option>
+                <option value="strategy">AI Strategy</option>
+                <option value="custom">Custom AI Solution</option>
+                <option value="integration">AI Integration</option>
+                <option value="other">Something Else</option>
+              </select>
+              <div class="field-line"></div>
+            </div>
+          </div>
+          <div class="form-row full">
+            <div class="form-field">
+              <textarea name="message" placeholder="Tell us about your project idea..." rows="4"></textarea>
+              <div class="field-line"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span class="btn-text">START CONVERSATION</span>
+            <span class="btn-loading">
+              <svg class="spinner" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="60" stroke-dashoffset="60"/>
+              </svg>
+            </span>
+            <span class="btn-success">SENT!</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script is:inline src="/scripts/projects.js"></script>

@@ -1,0 +1,209 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  author?: string;
+  heroImage?: string;
+  tags?: string[];
+}
+
+const { title, description, pubDate, author = 'Manaira Labs', heroImage, tags = [] } = Astro.props;
+
+const formattedDate = pubDate.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+---
+
+<BaseLayout title={`${title} | Manaira Labs Blog`} description={description}>
+  <article class="blog-post">
+    <header class="blog-header">
+      <div class="container">
+        <a href="/blog" class="back-link">← Back to Blog</a>
+        <div class="blog-meta">
+          <time datetime={pubDate.toISOString()}>{formattedDate}</time>
+          <span class="separator">•</span>
+          <span class="author">{author}</span>
+        </div>
+        <h1 class="blog-title">{title}</h1>
+        <p class="blog-description">{description}</p>
+        {tags.length > 0 && (
+          <div class="blog-tags">
+            {tags.map(tag => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+        )}
+      </div>
+    </header>
+
+    {heroImage && (
+      <div class="blog-hero">
+        <img src={heroImage} alt={title} loading="lazy" />
+      </div>
+    )}
+
+    <div class="blog-content">
+      <div class="container container-narrow">
+        <slot />
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .blog-post {
+    padding-top: calc(var(--nav-height) + var(--space-xl));
+  }
+
+  .blog-header {
+    padding: var(--space-2xl) 0;
+    text-align: center;
+  }
+
+  .back-link {
+    display: inline-block;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    margin-bottom: var(--space-lg);
+    transition: opacity 0.2s;
+  }
+
+  .back-link:hover {
+    opacity: 0.8;
+  }
+
+  .blog-meta {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    margin-bottom: var(--space-md);
+  }
+
+  .separator {
+    margin: 0 var(--space-sm);
+  }
+
+  .blog-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--space-md);
+  }
+
+  .blog-description {
+    font-size: 1.25rem;
+    color: var(--gray-400);
+    max-width: 600px;
+    margin: 0 auto var(--space-lg);
+  }
+
+  .blog-tags {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--primary-glow);
+    color: var(--primary);
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .blog-hero {
+    max-width: 900px;
+    margin: 0 auto var(--space-2xl);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .blog-hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-narrow {
+    max-width: 720px;
+  }
+
+  .blog-content {
+    padding-bottom: var(--space-3xl);
+  }
+
+  .blog-content :global(h2) {
+    font-size: 1.75rem;
+    margin: var(--space-xl) 0 var(--space-md);
+  }
+
+  .blog-content :global(h3) {
+    font-size: 1.25rem;
+    margin: var(--space-lg) 0 var(--space-sm);
+  }
+
+  .blog-content :global(p) {
+    margin-bottom: var(--space-md);
+    line-height: 1.8;
+    color: var(--gray-300);
+  }
+
+  .blog-content :global(ul),
+  .blog-content :global(ol) {
+    margin-bottom: var(--space-md);
+    padding-left: var(--space-lg);
+  }
+
+  .blog-content :global(li) {
+    margin-bottom: var(--space-sm);
+    line-height: 1.7;
+    color: var(--gray-300);
+  }
+
+  .blog-content :global(code) {
+    font-family: var(--font-mono);
+    background: var(--gray-800);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+
+  .blog-content :global(pre) {
+    background: var(--gray-900);
+    padding: var(--space-md);
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: var(--space-md);
+  }
+
+  .blog-content :global(pre code) {
+    background: none;
+    padding: 0;
+  }
+
+  .blog-content :global(blockquote) {
+    border-left: 3px solid var(--primary);
+    padding-left: var(--space-md);
+    margin: var(--space-lg) 0;
+    font-style: italic;
+    color: var(--gray-400);
+  }
+
+  .blog-content :global(a) {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+
+  .blog-content :global(img) {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: var(--space-lg) 0;
+  }
+</style>

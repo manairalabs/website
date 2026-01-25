@@ -1,0 +1,509 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Manaira Labs | AI Products & Solutions for Business"
+  description="AI products that work like employees. Customer service automation, workforce management, and custom AI solutions for businesses of any scale."
+>
+  <!-- Hero Section -->
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">AI PRODUCTS NOW AVAILABLE</span>
+      </div>
+
+      <h1 class="hero-title hero-title-compact" id="hero-title">
+        <span class="title-line">
+          <span class="title-word">AI That Works</span>
+        </span>
+        <span class="title-line">
+          <span class="title-word">Like </span>
+          <span class="title-word glitch" data-text="Employees.">Employees.</span>
+        </span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Ready-to-use AI products for your business.
+        <strong>Customer service, workforce management, business operations</strong> -
+        all powered by AI that actually delivers results.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#products" class="btn-primary">
+          <span class="btn-text">VIEW PRODUCTS</span>
+          <span class="btn-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+        <a href="#consulting" class="btn-secondary">
+          <span class="btn-text">AI CONSULTING</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="ai-brain">
+        <div class="brain-core"></div>
+        <div class="brain-rings">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+        </div>
+        <div class="brain-particles" id="brainParticles"></div>
+        <div class="data-streams">
+          <div class="stream stream-1"></div>
+          <div class="stream stream-2"></div>
+          <div class="stream stream-3"></div>
+          <div class="stream stream-4"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span class="scroll-text">SCROLL TO EXPLORE</span>
+    </div>
+  </section>
+
+  <!-- Marquee Section -->
+  <section class="marquee-section">
+    <div class="marquee">
+      <div class="marquee-content">
+        <span>CUSTOMER SERVICE AI</span>
+        <span class="dot">●</span>
+        <span>WORKFORCE MANAGEMENT</span>
+        <span class="dot">●</span>
+        <span>BUSINESS AUTOMATION</span>
+        <span class="dot">●</span>
+        <span>OMNICHANNEL INBOX</span>
+        <span class="dot">●</span>
+        <span>AI AGENTS</span>
+        <span class="dot">●</span>
+        <span>SMART SCHEDULING</span>
+        <span class="dot">●</span>
+        <span>CUSTOMER SERVICE AI</span>
+        <span class="dot">●</span>
+        <span>WORKFORCE MANAGEMENT</span>
+        <span class="dot">●</span>
+        <span>BUSINESS AUTOMATION</span>
+        <span class="dot">●</span>
+        <span>OMNICHANNEL INBOX</span>
+        <span class="dot">●</span>
+        <span>AI AGENTS</span>
+        <span class="dot">●</span>
+        <span>SMART SCHEDULING</span>
+        <span class="dot">●</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section class="section section-dark" id="problem">
+    <div class="container">
+      <div class="split-content">
+        <div class="split-left">
+          <span class="section-label">THE CHALLENGE</span>
+          <h2 class="section-title">
+            <span class="line">Running a business</span>
+            <span class="line">is <span class="strikethrough">hard</span></span>
+            <span class="line text-accent">getting harder.</span>
+          </h2>
+        </div>
+        <div class="split-right">
+          <div class="problem-list">
+            <div class="problem-item">
+              <span class="problem-number">01</span>
+              <div class="problem-content">
+                <h4>Customer Service Overload</h4>
+                <p>WhatsApp, Instagram, email - customers expect instant responses 24/7. Your team can't keep up.</p>
+              </div>
+            </div>
+            <div class="problem-item">
+              <span class="problem-number">02</span>
+              <div class="problem-content">
+                <h4>Operational Chaos</h4>
+                <p>Scheduling shifts, tracking tasks, managing inventory - still done on spreadsheets and WhatsApp groups.</p>
+              </div>
+            </div>
+            <div class="problem-item">
+              <span class="problem-number">03</span>
+              <div class="problem-content">
+                <h4>AI Seems Out of Reach</h4>
+                <p>Enterprise solutions are too expensive. Building custom AI requires consultants you can't afford.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section class="section section-solution" id="solution">
+    <div class="container">
+      <div class="solution-hero">
+        <span class="section-label">OUR APPROACH</span>
+        <h2 class="mega-title">
+          <span class="line">AI products</span>
+          <span class="line">that just</span>
+          <span class="line text-gradient">work.</span>
+        </h2>
+        <p class="solution-desc">
+          No consultants needed. No months of implementation. Our products are ready to deploy
+          and start working for your business today. AI that works like employees - always on, always consistent.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section section-products" id="products">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">OUR PRODUCTS</span>
+        <h2 class="section-title">AI Solutions Ready to Deploy</h2>
+        <p class="section-desc">Choose the product that fits your business needs. Start in days, not months.</p>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card featured">
+          <div class="product-badge">FLAGSHIP</div>
+          <div class="product-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+            </svg>
+          </div>
+          <h3 class="product-name">BicaraAI</h3>
+          <p class="product-tagline">AI Customer Service Automation</p>
+          <p class="product-desc">
+            Omnichannel inbox that unifies WhatsApp, Instagram, Messenger, Telegram, and email.
+            AI auto-replies handle 80% of inquiries 24/7.
+          </p>
+          <ul class="product-features">
+            <li>7-channel unified inbox</li>
+            <li>GPT-4 powered auto-replies</li>
+            <li>Knowledge base RAG</li>
+            <li>Smart routing to agents</li>
+            <li>Broadcast campaigns</li>
+          </ul>
+          <div class="product-pricing">
+            <span class="price">Rp 1.5 juta</span>
+            <span class="period">/month</span>
+          </div>
+          <a href="https://bicara.ai" target="_blank" rel="noopener" class="product-cta">Learn More</a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <h3 class="product-name">Manaira Team</h3>
+          <p class="product-tagline">AI Workforce Management</p>
+          <p class="product-desc">
+            Keep your store running smoothly. Shift scheduling, task management, and inventory tracking
+            with AI-powered insights for owners.
+          </p>
+          <ul class="product-features">
+            <li>Smart shift scheduling</li>
+            <li>Task assignment with photo proof</li>
+            <li>Inventory tracking & alerts</li>
+            <li>AI operational insights</li>
+            <li>Mobile crew app</li>
+          </ul>
+          <div class="product-pricing">
+            <span class="price">Rp 299K</span>
+            <span class="period">/month</span>
+          </div>
+          <a href="/products/team" class="product-cta">Learn More</a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">COMING SOON</div>
+          <div class="product-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+          </div>
+          <h3 class="product-name">Manaira Suite</h3>
+          <p class="product-tagline">Complete Business Management</p>
+          <p class="product-desc">
+            All your business apps in one place. Sales, inventory, HR, accounting, and AI employees
+            that work like digital employees across your operations.
+          </p>
+          <ul class="product-features">
+            <li>23 integrated business modules</li>
+            <li>6 AI digital employees</li>
+            <li>Multi-tenant architecture</li>
+            <li>Indonesian payment integration</li>
+            <li>No consultants required</li>
+          </ul>
+          <div class="product-pricing">
+            <span class="price">Contact</span>
+            <span class="period">for pricing</span>
+          </div>
+          <a href="/products/suite" class="product-cta">Join Waitlist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom AI Consulting Section -->
+  <section class="section section-capabilities" id="consulting">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">CUSTOM SOLUTIONS</span>
+        <h2 class="section-title">AI Consulting & Development</h2>
+        <p class="section-desc">Need something custom? Our engineering team builds AI solutions for any scale - from startups to enterprise.</p>
+      </div>
+
+      <div class="capabilities-grid">
+        <div class="capability-card" data-capability="strategy">
+          <div class="card-header">
+            <span class="card-number">01</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="card-title">AI Strategy</h3>
+          <p class="card-desc">Comprehensive AI roadmaps aligned with your business objectives. From assessment to implementation plan.</p>
+          <ul class="card-list">
+            <li>Readiness Assessment</li>
+            <li>Use Case Discovery</li>
+            <li>ROI Modeling</li>
+          </ul>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="capability-card" data-capability="solutions">
+          <div class="card-header">
+            <span class="card-number">02</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="card-title">Custom AI Development</h3>
+          <p class="card-desc">Bespoke AI solutions built for your specific needs. We don't just advise - we build and deploy.</p>
+          <ul class="card-list">
+            <li>LLM Applications</li>
+            <li>AI Agents & Automation</li>
+            <li>NLP & Computer Vision</li>
+          </ul>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="capability-card" data-capability="integration">
+          <div class="card-header">
+            <span class="card-number">03</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="card-title">System Integration</h3>
+          <p class="card-desc">Seamlessly integrate AI into your existing systems. API development, data pipelines, and cloud infrastructure.</p>
+          <ul class="card-list">
+            <li>API Development</li>
+            <li>Data Pipelines</li>
+            <li>Cloud Infrastructure</li>
+          </ul>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="capability-card" data-capability="agents">
+          <div class="card-header">
+            <span class="card-number">04</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="card-title">AI Agent Development</h3>
+          <p class="card-desc">Build autonomous AI agents that handle complex workflows. Agents that work 24/7 and get better over time.</p>
+          <ul class="card-list">
+            <li>Multi-agent Systems</li>
+            <li>Workflow Automation</li>
+            <li>Human-in-the-loop</li>
+          </ul>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="capability-card" data-capability="mlops">
+          <div class="card-header">
+            <span class="card-number">05</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="card-title">MLOps & Platform</h3>
+          <p class="card-desc">Build the infrastructure to scale AI across your organization. Model management, deployment, and monitoring.</p>
+          <ul class="card-list">
+            <li>MLOps Infrastructure</li>
+            <li>Deployment Pipelines</li>
+            <li>Monitoring & Scaling</li>
+          </ul>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="capability-card" data-capability="security">
+          <div class="card-header">
+            <span class="card-number">06</span>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="card-title">AI Security & Governance</h3>
+          <p class="card-desc">Ensure your AI systems are secure, compliant, and responsible. Risk assessment, audits, and guardrails.</p>
+          <ul class="card-list">
+            <li>Security Audits</li>
+            <li>Compliance & Ethics</li>
+            <li>AI Guardrails</li>
+          </ul>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section section-process" id="process">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">HOW IT WORKS</span>
+        <h2 class="section-title">Get Started in Days</h2>
+        <p class="section-desc">No lengthy implementations. Our products are ready to deploy.</p>
+      </div>
+
+      <div class="process-timeline">
+        <div class="timeline-line">
+          <div class="timeline-progress" id="timelineProgress"></div>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step active" data-step="1">
+            <div class="step-marker">
+              <span class="step-number">01</span>
+            </div>
+            <div class="step-content">
+              <span class="step-duration">Day 1</span>
+              <h3>CHOOSE</h3>
+              <p>Pick the product that fits your business needs. Schedule a demo to see it in action.</p>
+            </div>
+          </div>
+
+          <div class="process-step" data-step="2">
+            <div class="step-marker">
+              <span class="step-number">02</span>
+            </div>
+            <div class="step-content">
+              <span class="step-duration">Day 2-3</span>
+              <h3>SETUP</h3>
+              <p>We configure the product for your business. Connect your channels and import your data.</p>
+            </div>
+          </div>
+
+          <div class="process-step" data-step="3">
+            <div class="step-marker">
+              <span class="step-number">03</span>
+            </div>
+            <div class="step-content">
+              <span class="step-duration">Day 3-5</span>
+              <h3>TRAIN</h3>
+              <p>Quick onboarding for your team. We make sure everyone knows how to use it.</p>
+            </div>
+          </div>
+
+          <div class="process-step" data-step="4">
+            <div class="step-marker">
+              <span class="step-number">04</span>
+            </div>
+            <div class="step-content">
+              <span class="step-duration">Day 5+</span>
+              <h3>LAUNCH</h3>
+              <p>Go live and start seeing results. Our support team is always here to help.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section-cta" id="contact">
+    <div class="cta-bg">
+      <div class="cta-grid"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content">
+        <span class="section-label">GET STARTED</span>
+        <h2 class="cta-title">
+          <span class="line">Ready to put AI</span>
+          <span class="line">to work?</span>
+        </h2>
+        <p class="cta-desc">
+          Tell us about your business and we'll help you find the right solution - product or custom.
+        </p>
+
+        <form class="cta-form" id="contactForm" action="https://formspree.io/f/mqardgdj" method="POST">
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <div class="field-line"></div>
+            </div>
+            <div class="form-field">
+              <input type="email" name="email" placeholder="Email" required>
+              <div class="field-line"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" name="company" placeholder="Company">
+              <div class="field-line"></div>
+            </div>
+            <div class="form-field">
+              <select name="interest" required>
+                <option value="" disabled selected>What are you interested in?</option>
+                <option value="bicara">BicaraAI - Customer Service</option>
+                <option value="team">Manaira Team - Workforce</option>
+                <option value="suite">Manaira Suite - Business Apps</option>
+                <option value="consulting">Custom AI Project</option>
+                <option value="demo">Schedule a Demo</option>
+              </select>
+              <div class="field-line"></div>
+            </div>
+          </div>
+          <div class="form-row full">
+            <div class="form-field">
+              <textarea name="message" placeholder="Tell us about your business..." rows="4"></textarea>
+              <div class="field-line"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span class="btn-text">GET IN TOUCH</span>
+            <span class="btn-loading">
+              <svg class="spinner" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="60" stroke-dashoffset="60"/>
+              </svg>
+            </span>
+            <span class="btn-success">SENT ✓</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

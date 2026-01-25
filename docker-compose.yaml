@@ -1,0 +1,13 @@
+services:
+  website:
+    image: docker.io/manaira/website:${TAG:-latest}
+    container_name: manaira-website
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s

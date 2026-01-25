@@ -1,0 +1,764 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Manaira Team | AI Workforce Management | Manaira Labs"
+  description="AI-powered workforce management for retail and F&B. Smart shift scheduling, task management, and inventory tracking with AI insights for store owners."
+>
+  <!-- Hero Section -->
+  <section class="product-hero">
+    <div class="container">
+      <div class="product-hero-content">
+        <div class="product-hero-badge">
+          <span class="badge-dot"></span>
+          <span class="badge-text">WORKFORCE MANAGEMENT</span>
+        </div>
+
+        <h1 class="product-hero-title">
+          <span class="title-line">Your Store,</span>
+          <span class="title-line text-gradient">Always Under Control</span>
+        </h1>
+
+        <p class="product-hero-subtitle">
+          Manaira Team keeps your operations running smoothly. Smart scheduling, task tracking,
+          and AI insights - all in one platform. Built for retail, cafes, and restaurants.
+        </p>
+
+        <div class="product-hero-cta">
+          <a href="#contact" class="btn-primary">
+            <span class="btn-text">START FREE TRIAL</span>
+            <span class="btn-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </span>
+          </a>
+          <a href="#pricing" class="btn-secondary">
+            <span class="btn-text">VIEW PRICING</span>
+          </a>
+        </div>
+
+        <div class="product-hero-stats">
+          <div class="stat">
+            <span class="stat-number">50%</span>
+            <span class="stat-label">Less check-ins needed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">2x</span>
+            <span class="stat-label">Faster task completion</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">Real-time</span>
+            <span class="stat-label">Store visibility</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Two Apps Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">TWO APPS, ONE PLATFORM</span>
+        <h2 class="section-title">For Owners & Crew</h2>
+        <p class="section-desc">A dashboard for managers and a mobile app for crew members.</p>
+      </div>
+
+      <div class="apps-showcase">
+        <div class="app-card">
+          <div class="app-icon owner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/>
+            </svg>
+          </div>
+          <h3>Owner Dashboard</h3>
+          <p>Web-based dashboard for store owners and managers</p>
+          <ul class="app-features">
+            <li>Create and manage shift schedules</li>
+            <li>Assign tasks to crew members</li>
+            <li>Track inventory and stock levels</li>
+            <li>View real-time reports and analytics</li>
+            <li>AI-powered operational insights</li>
+            <li>Multi-store management</li>
+          </ul>
+        </div>
+
+        <div class="app-card">
+          <div class="app-icon crew">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/>
+            </svg>
+          </div>
+          <h3>Crew App</h3>
+          <p>Mobile-first PWA for crew members</p>
+          <ul class="app-features">
+            <li>View upcoming shifts</li>
+            <li>Clock in/out with location verification</li>
+            <li>Complete tasks with photo proof</li>
+            <li>Request time off or shift swaps</li>
+            <li>Receive push notifications</li>
+            <li>Works offline</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">FEATURES</span>
+        <h2 class="section-title">Everything to Run Your Store</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/>
+            </svg>
+          </div>
+          <h3>Smart Scheduling</h3>
+          <p>Create shift schedules with templates. AI suggests optimal coverage based on historical data and demand patterns.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3>Task Management</h3>
+          <p>Assign daily tasks with clear instructions. Crew completes with photo proof. Track completion in real-time.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/>
+            </svg>
+          </div>
+          <h3>Inventory Tracking</h3>
+          <p>Monitor stock levels in real-time. Get low-stock alerts. AI predicts when you'll run out.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3>Time & Attendance</h3>
+          <p>Crew clock in/out with GPS verification. Automatic overtime calculation. Export for payroll.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/>
+            </svg>
+          </div>
+          <h3>AI Insights</h3>
+          <p>Chat with AI about your operations in Bahasa or English. Get daily summaries and anomaly alerts.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"/>
+            </svg>
+          </div>
+          <h3>Notifications</h3>
+          <p>Push notifications for crew on schedule changes, new tasks, and reminders. Never miss an update.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">USE CASES</span>
+        <h2 class="section-title">Built for Your Business</h2>
+      </div>
+
+      <div class="usecases-grid">
+        <div class="usecase-card">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z"/>
+            </svg>
+          </div>
+          <h3>Retail Stores</h3>
+          <p>Minimarkets, convenience stores, specialty retail. Track inventory, manage shifts, ensure opening/closing procedures are followed.</p>
+        </div>
+
+        <div class="usecase-card">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.87c1.355 0 2.697.055 4.024.165C17.155 8.51 18 9.473 18 10.608v2.513m-3-4.87v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0L3 16.5m18-4.5a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3>Cafes & Coffee Shops</h3>
+          <p>Manage barista schedules, track ingredient inventory, ensure cleaning tasks are completed every shift.</p>
+        </div>
+
+        <div class="usecase-card">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3>Restaurants</h3>
+          <p>Coordinate kitchen and front-of-house. Task checklists for food prep, service, and closing duties.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">PRICING</span>
+        <h2 class="section-title">Affordable for Every Store</h2>
+        <p class="section-desc">Start small, scale as you grow. No setup fees.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3 class="pricing-name">Starter</h3>
+          <p class="pricing-desc">Perfect for single-location businesses</p>
+          <div class="pricing-price">
+            <span class="price">Rp 299K</span>
+            <span class="period">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Up to 3 stores</li>
+            <li>10 crew members</li>
+            <li>Shift scheduling</li>
+            <li>Basic task management</li>
+            <li>Time & attendance</li>
+            <li>Mobile crew app</li>
+          </ul>
+          <a href="#contact" class="pricing-cta">Start Free Trial</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="pricing-badge">BEST VALUE</div>
+          <h3 class="pricing-name">Professional</h3>
+          <p class="pricing-desc">For growing businesses with multiple locations</p>
+          <div class="pricing-price">
+            <span class="price">Rp 799K</span>
+            <span class="period">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Up to 10 stores</li>
+            <li>50 crew members</li>
+            <li>Advanced scheduling</li>
+            <li>Inventory tracking</li>
+            <li>AI insights & chat</li>
+            <li>Analytics dashboard</li>
+            <li>Photo verification</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#contact" class="pricing-cta">Start Free Trial</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3 class="pricing-name">Enterprise</h3>
+          <p class="pricing-desc">For chains and franchises</p>
+          <div class="pricing-price">
+            <span class="price">Custom</span>
+            <span class="period">pricing</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited stores</li>
+            <li>Unlimited crew</li>
+            <li>Custom integrations</li>
+            <li>API access</li>
+            <li>Dedicated support</li>
+            <li>SLA guarantee</li>
+            <li>Custom training</li>
+            <li>On-premise option</li>
+          </ul>
+          <a href="#contact" class="pricing-cta">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section-cta" id="contact">
+    <div class="cta-bg">
+      <div class="cta-grid"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content">
+        <span class="section-label">GET STARTED</span>
+        <h2 class="cta-title">
+          <span class="line">Ready to run your</span>
+          <span class="line">store smarter?</span>
+        </h2>
+        <p class="cta-desc">
+          Start your free 14-day trial. No credit card required.
+        </p>
+
+        <form class="cta-form" id="contactForm" action="https://formspree.io/f/mqardgdj" method="POST">
+          <input type="hidden" name="product" value="Manaira Team">
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <div class="field-line"></div>
+            </div>
+            <div class="form-field">
+              <input type="email" name="email" placeholder="Email" required>
+              <div class="field-line"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" name="company" placeholder="Business Name">
+              <div class="field-line"></div>
+            </div>
+            <div class="form-field">
+              <select name="business_type" required>
+                <option value="" disabled selected>Business Type</option>
+                <option value="retail">Retail Store</option>
+                <option value="cafe">Cafe / Coffee Shop</option>
+                <option value="restaurant">Restaurant</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="field-line"></div>
+            </div>
+          </div>
+          <div class="form-row full">
+            <div class="form-field">
+              <textarea name="message" placeholder="Tell us about your store(s)..." rows="4"></textarea>
+              <div class="field-line"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span class="btn-text">START FREE TRIAL</span>
+            <span class="btn-loading">
+              <svg class="spinner" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="60" stroke-dashoffset="60"/>
+              </svg>
+            </span>
+            <span class="btn-success">SENT ✓</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Product Hero */
+  .product-hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: calc(var(--nav-height) + var(--space-2xl)) var(--space-lg) var(--space-2xl);
+    background: var(--gradient-dark);
+  }
+
+  .product-hero-content {
+    max-width: 800px;
+  }
+
+  .product-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    background: rgba(0, 240, 255, 0.1);
+    border: 1px solid rgba(0, 240, 255, 0.3);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 100px;
+    margin-bottom: var(--space-lg);
+  }
+
+  .badge-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--primary);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  .badge-text {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    color: var(--primary);
+  }
+
+  .product-hero-title {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--space-lg);
+  }
+
+  .title-line {
+    display: block;
+  }
+
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .product-hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--gray-400);
+    line-height: 1.7;
+    margin-bottom: var(--space-xl);
+  }
+
+  .product-hero-cta {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-2xl);
+  }
+
+  .product-hero-stats {
+    display: flex;
+    gap: var(--space-2xl);
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: var(--font-mono);
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+  }
+
+  /* Apps Showcase */
+  .apps-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .apps-showcase {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .app-card {
+    padding: var(--space-xl);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .app-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 auto var(--space-lg);
+  }
+
+  .app-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .app-icon.owner {
+    background: rgba(0, 240, 255, 0.1);
+    color: var(--primary);
+  }
+
+  .app-icon.crew {
+    background: rgba(123, 97, 255, 0.1);
+    color: var(--secondary);
+  }
+
+  .app-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-xs);
+  }
+
+  .app-card > p {
+    color: var(--gray-500);
+    margin-bottom: var(--space-lg);
+  }
+
+  .app-features {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .app-features li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: 0.9rem;
+    color: var(--gray-300);
+  }
+
+  .app-features li::before {
+    content: '✓';
+    color: var(--primary);
+    font-weight: 600;
+  }
+
+  /* Features Grid */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+
+  @media (max-width: 1024px) {
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .feature-card {
+    padding: var(--space-xl);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    transition: all var(--duration-base);
+  }
+
+  .feature-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+  }
+
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 240, 255, 0.1);
+    border-radius: 12px;
+    color: var(--primary);
+    margin-bottom: var(--space-md);
+  }
+
+  .feature-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .feature-card p {
+    color: var(--gray-400);
+    line-height: 1.7;
+  }
+
+  /* Use Cases */
+  .usecases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+
+  @media (max-width: 900px) {
+    .usecases-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .usecase-card {
+    padding: var(--space-xl);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .usecase-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 240, 255, 0.1);
+    border-radius: 16px;
+    color: var(--primary);
+    margin: 0 auto var(--space-md);
+  }
+
+  .usecase-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .usecase-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .usecase-card p {
+    color: var(--gray-400);
+    line-height: 1.7;
+  }
+
+  /* Pricing Grid */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 900px) {
+    .pricing-grid {
+      grid-template-columns: 1fr;
+      max-width: 400px;
+    }
+  }
+
+  .pricing-card {
+    position: relative;
+    padding: var(--space-xl);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pricing-card.featured {
+    border-color: var(--primary);
+    background: rgba(0, 240, 255, 0.03);
+  }
+
+  .pricing-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.625rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--gradient-primary);
+    color: var(--black);
+    border-radius: 4px;
+  }
+
+  .pricing-name {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-xs);
+  }
+
+  .pricing-desc {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    margin-bottom: var(--space-lg);
+  }
+
+  .pricing-price {
+    margin-bottom: var(--space-lg);
+  }
+
+  .pricing-price .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .pricing-price .period {
+    font-size: 1rem;
+    color: var(--gray-500);
+  }
+
+  .pricing-features {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
+  }
+
+  .pricing-features li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: 0.875rem;
+    color: var(--gray-300);
+  }
+
+  .pricing-features li::before {
+    content: '✓';
+    color: var(--primary);
+    font-weight: 600;
+  }
+
+  .pricing-cta {
+    display: block;
+    width: 100%;
+    padding: var(--space-md);
+    background: transparent;
+    border: 1px solid var(--gray-600);
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-decoration: none;
+    transition: all var(--duration-base);
+  }
+
+  .pricing-cta:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--black);
+  }
+
+  .pricing-card.featured .pricing-cta {
+    background: var(--white);
+    border-color: var(--white);
+    color: var(--black);
+  }
+
+  .pricing-card.featured .pricing-cta:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+  }
+</style>

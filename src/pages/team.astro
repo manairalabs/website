@@ -1,0 +1,184 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Our Team | Manaira Labs - AI Engineers & Builders"
+  description="Meet the team behind Manaira Labs - seasoned engineers and sales professionals building enterprise AI solutions."
+>
+  <link rel="stylesheet" href="/styles/team-page.css" slot="head" />
+
+  <!-- Team Hero -->
+  <section class="team-hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">THE HUMANS</span>
+      </div>
+      <h1 class="team-title">
+        <span class="title-line">Built by <span class="text-gradient">Builders</span></span>
+      </h1>
+      <p class="team-subtitle">
+        We're not consultants who theorize. We're operators who've shipped products used by millions and closed deals that moved the needle. Now we build AI that does the same.
+      </p>
+    </div>
+  </section>
+
+  <!-- Team Members -->
+  <section class="section section-members">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">THE TEAM</span>
+        <h2 class="section-title">Two People. Complete Capability.</h2>
+      </div>
+
+      <div class="members-grid">
+        <!-- Engineer -->
+        <div class="member-card">
+          <div class="member-avatar">
+            <div class="avatar-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+              </svg>
+            </div>
+          </div>
+          <div class="member-info">
+            <span class="member-role">Engineering</span>
+            <h3 class="member-title">The Architect</h3>
+            <p class="member-desc">
+              Years of battle scars from building products that millions actually use. From enterprise platforms that can't afford downtime to consumer apps that need to delight at scale—been there, shipped that.
+            </p>
+            <div class="member-expertise">
+              <span class="expertise-tag">Enterprise Systems</span>
+              <span class="expertise-tag">Consumer Products</span>
+              <span class="expertise-tag">AI/ML Infrastructure</span>
+              <span class="expertise-tag">Cloud Architecture</span>
+              <span class="expertise-tag">System Design</span>
+              <span class="expertise-tag">Full-Stack Development</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sales -->
+        <div class="member-card">
+          <div class="member-avatar">
+            <div class="avatar-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="member-info">
+            <span class="member-role">Sales & Growth</span>
+            <h3 class="member-title">The Closer</h3>
+            <p class="member-desc">
+              Knows what makes businesses say yes. From navigating complex B2B enterprise deals with multiple stakeholders to driving B2C growth at scale—understands both sides of the revenue equation.
+            </p>
+            <div class="member-expertise">
+              <span class="expertise-tag">B2B Enterprise Sales</span>
+              <span class="expertise-tag">B2C Acquisition</span>
+              <span class="expertise-tag">Partnership Development</span>
+              <span class="expertise-tag">Go-to-Market Strategy</span>
+              <span class="expertise-tag">Contract Negotiation</span>
+              <span class="expertise-tag">Revenue Operations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why It Matters -->
+  <section class="section section-why">
+    <div class="container">
+      <div class="why-content">
+        <span class="section-label">WHY IT MATTERS</span>
+        <h2 class="why-title">
+          <span class="line">We don't just build AI.</span>
+          <span class="line text-gradient">We build AI that sells.</span>
+        </h2>
+        <p class="why-desc">
+          Technical excellence means nothing if it doesn't drive business outcomes. Our unique combination of deep engineering expertise and proven sales experience means every solution we build is designed not just to work—but to win customers, close deals, and scale revenue.
+        </p>
+        <div class="why-stats">
+          <div class="why-stat">
+            <span class="stat-value">15+</span>
+            <span class="stat-label">Years Combined Experience</span>
+          </div>
+          <div class="why-stat">
+            <span class="stat-value">Both</span>
+            <span class="stat-label">Enterprise & Consumer</span>
+          </div>
+          <div class="why-stat">
+            <span class="stat-value">Full</span>
+            <span class="stat-label">Build to Sale Capability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section-cta" id="contact">
+    <div class="cta-bg">
+      <div class="cta-grid"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content">
+        <span class="section-label">WORK WITH US</span>
+        <h2 class="cta-title">
+          <span class="line">Let's build</span>
+          <span class="line">something together.</span>
+        </h2>
+        <p class="cta-desc">
+          Whether you need AI strategy, custom development, or a team that can take your product from concept to customers—we're ready.
+        </p>
+
+        <form class="cta-form" id="contactForm" action="https://formspree.io/f/mqardgdj" method="POST">
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <div class="field-line"></div>
+            </div>
+            <div class="form-field">
+              <input type="email" name="email" placeholder="Email" required>
+              <div class="field-line"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" name="company" placeholder="Company">
+              <div class="field-line"></div>
+            </div>
+            <div class="form-field">
+              <select name="interest" required>
+                <option value="" disabled selected>What do you need?</option>
+                <option value="strategy">AI Strategy</option>
+                <option value="custom">Custom AI Solution</option>
+                <option value="integration">AI Integration</option>
+                <option value="analytics">Analytics</option>
+                <option value="other">Something Else</option>
+              </select>
+              <div class="field-line"></div>
+            </div>
+          </div>
+          <div class="form-row full">
+            <div class="form-field">
+              <textarea name="message" placeholder="Tell us about your challenge..." rows="4"></textarea>
+              <div class="field-line"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span class="btn-text">INITIATE CONTACT</span>
+            <span class="btn-loading">
+              <svg class="spinner" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="60" stroke-dashoffset="60"/>
+              </svg>
+            </span>
+            <span class="btn-success">SENT!</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

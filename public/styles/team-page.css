@@ -1,0 +1,206 @@
+/* =====================================================
+   TEAM PAGE STYLES
+   ===================================================== */
+
+/* Hero animations (base styles in main.css) */
+.team-title {
+    animation: fadeInUp 1s var(--ease-out-expo) 0.3s both;
+}
+
+.team-subtitle {
+    max-width: 700px;
+    line-height: 1.8;
+    animation: fadeInUp 1s var(--ease-out-expo) 0.5s both;
+}
+
+/* ----- Team Members Section ----- */
+.section-members {
+    background: var(--gray-900);
+    padding: var(--space-3xl) var(--space-lg);
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width: 868px) {
+    .members-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.member-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: var(--space-2xl);
+    transition: all var(--duration-slow) var(--ease-out-expo);
+    position: relative;
+    overflow: hidden;
+}
+
+.member-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity var(--duration-base);
+}
+
+.member-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(0, 240, 255, 0.2);
+    transform: translateY(-8px);
+}
+
+.member-card:hover::before {
+    opacity: 1;
+}
+
+.member-avatar {
+    margin-bottom: var(--space-xl);
+}
+
+.avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 240, 255, 0.1);
+    border: 2px solid rgba(0, 240, 255, 0.3);
+    border-radius: 50%;
+    color: var(--primary);
+}
+
+.avatar-placeholder svg {
+    width: 36px;
+    height: 36px;
+}
+
+.member-role {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: var(--space-sm);
+}
+
+.member-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+    color: var(--white);
+}
+
+.member-desc {
+    color: var(--gray-400);
+    line-height: 1.8;
+    margin-bottom: var(--space-xl);
+}
+
+.member-expertise {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+.expertise-tag {
+    font-size: 0.75rem;
+    padding: var(--space-xs) var(--space-sm);
+    background: rgba(0, 240, 255, 0.08);
+    border: 1px solid rgba(0, 240, 255, 0.15);
+    border-radius: 4px;
+    color: var(--gray-300);
+    transition: all var(--duration-base);
+}
+
+.member-card:hover .expertise-tag {
+    background: rgba(0, 240, 255, 0.12);
+    border-color: rgba(0, 240, 255, 0.25);
+}
+
+/* ----- Why Section ----- */
+.section-why {
+    background: var(--black);
+    padding: var(--space-3xl) var(--space-lg);
+}
+
+.why-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.why-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--space-xl);
+}
+
+.why-title .line {
+    display: block;
+}
+
+.why-desc {
+    font-size: 1.125rem;
+    color: var(--gray-400);
+    line-height: 1.8;
+    margin-bottom: var(--space-2xl);
+}
+
+.why-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+@media (max-width: 600px) {
+    .why-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+.why-stat {
+    padding: var(--space-xl);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-xs);
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+}
+
+/* ----- Nav Active State ----- */
+.nav-link.active {
+    color: var(--primary);
+}
+
+.nav-link.active::after {
+    width: 100%;
+}

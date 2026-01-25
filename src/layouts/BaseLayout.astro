@@ -1,0 +1,229 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description,
+  canonical = Astro.url.href,
+  ogImage = '/icons/og-image.png'
+} = Astro.props;
+
+const siteUrl = 'https://manairalabs.com';
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content={description}>
+    <meta name="keywords" content="AI consulting, machine learning, enterprise AI, artificial intelligence, AI solutions, Manaira Labs">
+    <meta name="author" content="Manaira Labs">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href={canonical}>
+    <title>{title}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content={canonical}>
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:image" content={`${siteUrl}${ogImage}`}>
+    <meta property="og:site_name" content="Manaira Labs">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content={canonical}>
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:image" content={`${siteUrl}${ogImage}`}>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <!-- Page-specific styles -->
+    <slot name="head" />
+
+    <!-- Theme initialization -->
+    <script is:inline>
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+</head>
+<body>
+    <!-- Cursor Dot -->
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Robot Cursor -->
+    <div class="robot-cursor" id="robotCursor">
+        <svg viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="robot-svg">
+            <g class="robot-arm robot-arm-left" id="robotArmLeft">
+                <ellipse cx="8" cy="52" rx="6" ry="8" fill="#00f0ff"/>
+                <rect x="4" y="44" width="8" height="4" rx="2" fill="#00f0ff" opacity="0.7"/>
+            </g>
+            <g class="robot-arm robot-arm-right" id="robotArmRight">
+                <ellipse cx="72" cy="52" rx="6" ry="8" fill="#00f0ff"/>
+                <rect x="68" y="44" width="8" height="4" rx="2" fill="#00f0ff" opacity="0.7"/>
+            </g>
+            <ellipse cx="40" cy="58" rx="22" ry="18" fill="#00f0ff" opacity="0.3"/>
+            <ellipse cx="40" cy="56" rx="18" ry="14" fill="#0a1628" stroke="#00f0ff" stroke-width="2"/>
+            <ellipse cx="40" cy="32" rx="26" ry="24" fill="#0a1628" stroke="#00f0ff" stroke-width="2"/>
+            <ellipse cx="40" cy="35" rx="20" ry="14" fill="#111" stroke="#00f0ff" stroke-width="1" opacity="0.9"/>
+            <path d="M28 32 Q32 28 36 32" stroke="#00f0ff" stroke-width="3" stroke-linecap="round" fill="none" class="robot-eye"/>
+            <path d="M44 32 Q48 28 52 32" stroke="#00f0ff" stroke-width="3" stroke-linecap="round" fill="none" class="robot-eye"/>
+            <line x1="40" y1="8" x2="40" y2="14" stroke="#00f0ff" stroke-width="2"/>
+            <circle cx="40" cy="6" r="4" fill="#00f0ff" class="robot-antenna"/>
+            <circle cx="14" cy="30" r="4" fill="#00f0ff" opacity="0.8"/>
+            <circle cx="66" cy="30" r="4" fill="#00f0ff" opacity="0.8"/>
+        </svg>
+    </div>
+
+    <!-- Neural Network Background -->
+    <canvas id="neuralCanvas"></canvas>
+
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">
+                <img src="/icons/logo-text-light.png" alt="Manaira Labs" class="logo-img logo-light">
+                <img src="/icons/logo-text-dark.png" alt="Manaira Labs" class="logo-img logo-dark">
+            </a>
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <button class="nav-link nav-dropdown-trigger">
+                        PRODUCTS
+                        <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="https://bicara.ai" target="_blank" rel="noopener" class="dropdown-item">
+                            <span class="dropdown-item-name">BicaraAI</span>
+                            <span class="dropdown-item-desc">Customer Service AI</span>
+                        </a>
+                        <a href="/products/team" class="dropdown-item">
+                            <span class="dropdown-item-name">Manaira Team</span>
+                            <span class="dropdown-item-desc">Workforce Management</span>
+                        </a>
+                        <a href="/products/suite" class="dropdown-item">
+                            <span class="dropdown-item-name">Manaira Suite</span>
+                            <span class="dropdown-item-desc">All-in-One Business Apps</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="/consulting" class="nav-link" data-text="CONSULTING">CONSULTING</a>
+                <a href="/projects" class="nav-link" data-text="PROJECTS">PROJECTS</a>
+                <a href="/team" class="nav-link" data-text="TEAM">TEAM</a>
+                <a href="/blog" class="nav-link" data-text="BLOG">BLOG</a>
+                <a href="/#contact" class="nav-link nav-cta">GET STARTED <span class="arrow">→</span></a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+        <div class="mobile-menu-content">
+            <div class="mobile-dropdown">
+                <span class="mobile-link-header">PRODUCTS</span>
+                <a href="https://bicara.ai" target="_blank" rel="noopener" class="mobile-link-sub">BicaraAI</a>
+                <a href="/products/team" class="mobile-link-sub">Manaira Team</a>
+                <a href="/products/suite" class="mobile-link-sub">Manaira Suite</a>
+            </div>
+            <a href="/consulting" class="mobile-link">CONSULTING</a>
+            <a href="/projects" class="mobile-link">PROJECTS</a>
+            <a href="/team" class="mobile-link">TEAM</a>
+            <a href="/blog" class="mobile-link">BLOG</a>
+            <a href="/#contact" class="mobile-link accent">GET STARTED</a>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <slot />
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <img src="/icons/logo-text-light.png" alt="Manaira Labs" class="logo-img-footer logo-light">
+                        <img src="/icons/logo-text-dark.png" alt="Manaira Labs" class="logo-img-footer logo-dark">
+                    </a>
+                    <p class="footer-tagline">AI That Works. Results That Matter.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Products</h4>
+                        <a href="https://bicara.ai" target="_blank" rel="noopener">BicaraAI</a>
+                        <a href="/products/team">Manaira Team</a>
+                        <a href="/products/suite">Manaira Suite</a>
+                        <a href="/consulting">Custom AI Projects</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="/#process">How It Works</a>
+                        <a href="/projects">Projects</a>
+                        <a href="/team">Team</a>
+                        <a href="/blog">Blog</a>
+                        <a href="/#contact">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="https://linkedin.com/company/manairalabs" target="_blank">LinkedIn</a>
+                        <a href="https://twitter.com/manairalabs" target="_blank">Twitter/X</a>
+                        <a href="https://instagram.com/manairalabs" target="_blank">Instagram</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <a href="/privacy">Privacy Policy</a>
+                        <a href="/terms">Terms of Service</a>
+                        <a href="/cookies">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; {new Date().getFullYear()} PT Manaira Maju Bersama. All rights reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="/privacy">Privacy</a>
+                    <span class="separator">·</span>
+                    <a href="/terms">Terms</a>
+                    <span class="separator">·</span>
+                    <a href="/cookies">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script is:inline src="/scripts/main.js"></script>
+</body>
+</html>
