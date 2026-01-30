@@ -1,13 +1,13 @@
 ---
 title: "AI ROI: What to Realistically Expect from Your First AI Project"
 description: "Cutting through the hype to give you realistic expectations for AI implementation returns."
-pubDate: 2024-11-10
+pubDate: 2026-01-30
 author: "Manaira Labs"
 tags: ["AI Strategy", "ROI", "Business"]
 heroImage: "/images/blog/ai-roi.png"
 category: "Insights"
 lang: "en"
-draft: true
+draft: false
 ---
 
 Every AI vendor promises transformational ROI. "10x productivity!" "90% cost reduction!" "Revolutionize your business!"

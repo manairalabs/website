@@ -1,13 +1,13 @@
 ---
 title: "ROI AI: Ekspektasi Realistis untuk Proyek AI Pertama Anda"
 description: "Menembus hype untuk memberikan ekspektasi realistis tentang return implementasi AI."
-pubDate: 2024-11-10
+pubDate: 2026-01-30
 author: "Manaira Labs"
 tags: ["Strategi AI", "ROI", "Bisnis"]
 heroImage: "/images/blog/ai-roi.png"
 category: "Insights"
 lang: "id"
-draft: true
+draft: false
 ---
 
 Setiap vendor AI menjanjikan ROI transformasional. "Produktivitas 10x lipat!" "Pengurangan biaya 90%!" "Revolusi bisnis Anda!"
