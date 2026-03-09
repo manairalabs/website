@@ -9,9 +9,10 @@ tags:
   - "Digital Transformation"
   - "AI Implementation"
   - "Business Intelligence"
-keyword: "enterprise AI solutions"
+heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200"
+category: "Insights"
 lang: "en"
-draft: true
+draft: false
 ---
 
 # Enterprise AI Solutions: Strategy, Implementation, and Real-World Impact
