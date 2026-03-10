@@ -8,9 +8,11 @@ interface Props {
   author?: string;
   heroImage?: string;
   tags?: string[];
+  lang?: 'en' | 'id';
+  hreflangSlug?: string;
 }
 
-const { title, description, pubDate, author = 'Manaira Labs', heroImage, tags = [] } = Astro.props;
+const { title, description, pubDate, author = 'Manaira Labs', heroImage, tags = [], lang = 'en', hreflangSlug } = Astro.props;
 
 const formattedDate = pubDate.toLocaleDateString('en-US', {
   year: 'numeric',
@@ -43,6 +45,12 @@ const articleSchema = {
 
 <BaseLayout title={`${title} | Manaira Labs Blog`} description={description} ogImage={heroImage} keywords={tags.join(', ')}>
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} slot="head" />
+  {hreflangSlug && (
+    <Fragment slot="head">
+      <link rel="alternate" hreflang={lang} href={`${siteUrl}/blog/${Astro.url.pathname.split('/').filter(Boolean).pop()}`} />
+      <link rel="alternate" hreflang={lang === 'en' ? 'id' : 'en'} href={`${siteUrl}/blog/${hreflangSlug}`} />
+    </Fragment>
+  )}
   <article class="blog-post">
     <header class="blog-header">
       <div class="container">

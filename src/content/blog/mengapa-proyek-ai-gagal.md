@@ -1,12 +1,13 @@
 ---
 title: "Mengapa 87% Proyek AI Gagal (Dan Cara Menjadi 13% yang Berhasil)"
-description: "Sebagian besar inisiatif AI tidak pernah sampai ke tahap produksi. Inilah yang membedakan proyek AI yang sukses dari yang hanya jadi pajangan."
+description: "Mengapa proyek AI gagal dan bagaimana cara sukses. Insight dari konsultan AI Indonesia tentang strategi implementasi AI yang berhasil untuk enterprise dan UMKM."
 pubDate: 2024-12-15
 author: "Manaira Labs"
 tags: ["Strategi AI", "Enterprise AI", "Best Practices"]
 heroImage: "/images/blog/ai-projects-fail.png"
 category: "Insights"
 lang: "id"
+hreflangSlug: "why-ai-projects-fail"
 draft: true
 ---
 
@@ -58,4 +59,4 @@ Itu 8 minggu dari kickoff ke produksi. Bukan 8 bulan. Bukan "Fase 1 dari transfo
 
 ## Siap Membangun Sesuatu yang Benar-Benar Berfungsi?
 
-Jika Anda lelah dengan proyek AI yang tidak ke mana-mana, [mari bicara](/contact). Kami akan jujur mengatakan apakah AI tepat untuk masalah Anda—dan jika iya, kami akan membangunnya bersama.
+Jika Anda lelah dengan proyek AI yang tidak ke mana-mana, [mari bicara](/#contact). Sebagai [konsultan AI Indonesia](/consulting), Manaira Labs menggabungkan strategi AI dengan implementasi langsung. Dari machine learning consulting hingga enterprise AI solutions, kami deliver dalam minggu, bukan bulan.

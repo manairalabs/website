@@ -1,12 +1,13 @@
 ---
-title: "ROI AI: Ekspektasi Realistis untuk Proyek AI Pertama Anda"
-description: "Menembus hype untuk memberikan ekspektasi realistis tentang return implementasi AI."
+title: "ROI AI: Ekspektasi Realistis untuk Implementasi AI Pertama Anda"
+description: "Panduan ROI AI dari konsultan AI Indonesia. Ekspektasi realistis return investasi AI untuk bisnis — dari implementasi hingga enterprise AI solutions. Data nyata dari Manaira Labs."
 pubDate: 2026-01-30
 author: "Manaira Labs"
 tags: ["Strategi AI", "ROI", "Bisnis"]
 heroImage: "/images/blog/ai-roi.png"
 category: "Insights"
 lang: "id"
+hreflangSlug: "ai-roi-expectations"
 draft: false
 ---
 
@@ -95,6 +96,6 @@ Untuk memaksimalkan ROI AI:
 
 ## Siap untuk Implementasi AI yang Realistis?
 
-Kami lebih memilih memberikan ekspektasi jujur daripada overpromise dan underdeliver.
+Di [Manaira Labs](/), kami adalah [konsultan AI Indonesia](/consulting) yang memberikan ekspektasi jujur — tanpa hype. Baik Anda butuh AI strategy consulting, otomasi bisnis AI, atau enterprise AI solutions, kami memulai setiap engagement dengan ROI modeling yang jelas.
 
-[Dapatkan penilaian realistis peluang AI Anda →](/contact)
+[Dapatkan penilaian realistis peluang AI Anda →](/#contact)

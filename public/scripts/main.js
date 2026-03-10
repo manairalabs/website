@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fast loading - just enough for initial render
     setTimeout(() => {
-        loader.classList.add('hidden');
+        if (loader) loader.classList.add('hidden');
         document.body.style.overflow = 'auto';
         initAnimations();
     }, 800);

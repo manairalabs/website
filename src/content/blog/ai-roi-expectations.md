@@ -1,12 +1,13 @@
 ---
-title: "AI ROI: What to Realistically Expect from Your First AI Project"
-description: "Cutting through the hype to give you realistic expectations for AI implementation returns."
+title: "AI ROI: What to Realistically Expect from Your First AI Implementation"
+description: "Realistic AI ROI expectations for businesses. From AI consulting to implementation — how to calculate returns on your first AI project. Real numbers from enterprise AI solutions in Indonesia."
 pubDate: 2026-01-30
 author: "Manaira Labs"
 tags: ["AI Strategy", "ROI", "Business"]
 heroImage: "/images/blog/ai-roi.png"
 category: "Insights"
 lang: "en"
+hreflangSlug: "roi-ai-ekspektasi-realistis"
 draft: false
 ---
 
@@ -95,6 +96,6 @@ To maximize AI ROI:
 
 ## Ready for Realistic AI Implementation?
 
-We'd rather give you honest expectations than overpromise and underdeliver.
+At [Manaira Labs](/), we provide AI consulting in Indonesia with honest expectations — no hype, just results. Whether you need AI strategy consulting, AI implementation strategy, or enterprise AI solutions, we start every engagement with clear ROI modeling.
 
-[Get a realistic assessment of your AI opportunity →](/contact)
+Our AI automation consulting approach delivers measurable outcomes from week one. [Get a realistic assessment of your AI opportunity →](/#contact)

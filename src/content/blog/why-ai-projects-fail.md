@@ -1,12 +1,13 @@
 ---
 title: "Why 87% of AI Projects Fail (And How to Be in the 13%)"
-description: "Most AI initiatives never make it to production. Here's what separates successful AI projects from the ones that gather dust."
+description: "Most AI initiatives never reach production. AI strategy consulting insights from Manaira Labs on what separates successful enterprise AI solutions from failed implementations."
 pubDate: 2024-12-15
 author: "Manaira Labs"
 tags: ["AI Strategy", "Enterprise AI", "Best Practices"]
 heroImage: "/images/blog/ai-projects-fail.png"
 category: "Insights"
 lang: "en"
+hreflangSlug: "mengapa-proyek-ai-gagal"
 draft: true
 ---
 
@@ -58,4 +59,4 @@ That's 8 weeks from kickoff to production. Not 8 months. Not "Phase 1 of a multi
 
 ## Ready to Build Something That Works?
 
-If you're tired of AI projects that go nowhere, [let's talk](/contact). We'll tell you honestly whether AI is right for your problem—and if it is, we'll build it together.
+If you're tired of AI projects that go nowhere, [let's talk](/#contact). As an AI consulting firm in Indonesia, Manaira Labs combines AI strategy consulting with hands-on implementation. We'll tell you honestly whether AI is right for your problem—and if it is, we'll build it together. From machine learning consulting to enterprise AI solutions, we ship in weeks, not months.

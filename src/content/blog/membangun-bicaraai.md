@@ -1,12 +1,13 @@
 ---
-title: "Cara Kami Membangun BicaraAI: Menyelesaikan Masalah Customer Service Toko Retail"
-description: "Bagaimana kesulitan toko retail menjawab pertanyaan WhatsApp membawa kami membangun platform AI customer service."
+title: "Cara Kami Membangun BicaraAI: Studi Kasus Implementasi AI untuk Retail"
+description: "Studi kasus konsultan AI Indonesia: bagaimana Manaira Labs membangun platform AI customer service untuk toko retail. Dari strategi AI hingga produksi dalam 8 minggu."
 pubDate: 2024-11-28
 author: "Manaira Labs"
-tags: ["Studi Kasus", "Pengembangan AI", "BicaraAI"]
+tags: ["Studi Kasus", "Pengembangan AI", "BicaraAI", "Implementasi AI"]
 heroImage: "/images/blog/bicaraai-build.png"
 category: "Case Study"
 lang: "id"
+hreflangSlug: "building-bicaraai"
 draft: false
 ---
 
@@ -75,8 +76,8 @@ Pemilik toko bilang ke kami: "Sebelum BicaraAI, saya terpaku di HP. Sekarang say
 
 Apakah bisnis Anda punya masalah yang sama? [Kunjungi BicaraAI](https://bicara.ai) untuk lihat bagaimana kami bisa bantu Anda merespons lebih cepat dan menjual lebih banyak.
 
-## Butuh Solusi Custom?
+## Butuh Solusi AI Custom?
 
-Setiap bisnis berbeda. Jika Anda butuh sesuatu yang disesuaikan dengan kebutuhan spesifik Anda, kami bisa bantu.
+Setiap bisnis berbeda. Sebagai [konsultan AI Indonesia](/consulting), Manaira Labs membangun solusi AI custom — dari strategi AI, implementasi, hingga machine learning consulting. Kami menyediakan enterprise AI solutions untuk bisnis di Indonesia, dari startup sampai perusahaan besar.
 
-[Mari bicara tentang proyek Anda →](/contact)
+[Mari bicara tentang proyek Anda →](/#contact)

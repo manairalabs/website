@@ -1,19 +1,20 @@
 ---
-title: "How We Built BicaraAI: Solving a Retail Store's Customer Service Problem"
-description: "How a retail store's struggle with WhatsApp inquiries led us to build an AI customer service platform."
+title: "How We Built BicaraAI: AI Implementation Strategy for Retail Customer Service"
+description: "AI consulting case study: how Manaira Labs built an AI customer service platform for a retail store. Real-world AI implementation strategy from discovery to production in 8 weeks."
 pubDate: 2024-11-28
 author: "Manaira Labs"
-tags: ["Case Study", "AI Development", "BicaraAI"]
+tags: ["Case Study", "AI Development", "BicaraAI", "AI Implementation"]
 heroImage: "/images/blog/bicaraai-build.png"
 category: "Case Study"
 lang: "en"
+hreflangSlug: "membangun-bicaraai"
 ---
 
-It started with a simple problem: a retail store owner spending 4+ hours daily answering the same WhatsApp questions over and over.
+This AI implementation case study shows how our AI consulting team at Manaira Labs built a customer service automation platform from scratch. It started with a simple problem: a retail store owner spending 4+ hours daily answering the same WhatsApp questions over and over.
 
 "Is this item in stock?" "What are your opening hours?" "Do you deliver to my area?" "What's the price for this product?"
 
-The same questions, hundreds of times a week. The owner knew there had to be a better way. That conversation became the starting point for [BicaraAI](https://bicara.ai).
+The same questions, hundreds of times a week. The owner knew there had to be a better way. That conversation became the starting point for [BicaraAI](https://bicara.ai) — and a real example of AI implementation strategy that delivers measurable ROI.
 
 ## The Real Problem
 
@@ -74,8 +75,8 @@ The store owner told us: "Before BicaraAI, I was glued to my phone. Now I check 
 
 Does your business struggle with the same problem? [Visit BicaraAI](https://bicara.ai) to see how we can help you respond faster and sell more.
 
-## Want a Custom Solution?
+## Want a Custom AI Solution?
 
-Every business is different. If you need something tailored to your specific needs, we can help.
+Every business is different. As an [AI consulting firm in Indonesia](/consulting), Manaira Labs builds custom AI solutions — from AI strategy consulting to full implementation. Whether you need enterprise AI solutions, machine learning consulting, or AI automation consulting, our team delivers from strategy to production.
 
-[Let's talk about your project →](/contact)
+[Let's talk about your project →](/#contact)

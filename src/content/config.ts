@@ -13,6 +13,7 @@ const blog = defineCollection({
     category: z.enum(['Insights', 'Case Study', 'Tutorial', 'News', 'Product Updates', 'SMB Insights']).default('Insights'),
     lang: z.enum(['en', 'id']).default('en'),
     draft: z.boolean().default(false),
+    hreflangSlug: z.string().optional(),
   }),
 });
 

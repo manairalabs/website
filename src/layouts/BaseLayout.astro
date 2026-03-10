@@ -7,7 +7,7 @@ interface Props {
   keywords?: string;
 }
 
-const defaultKeywords = "Manaira Labs, AI products Indonesia, AI consulting, custom AI development, AI untuk bisnis, AI agent workforce, AI solutions, enterprise AI, machine learning, AI automation, solusi AI Indonesia";
+const defaultKeywords = "AI consulting Indonesia, AI strategy consulting, AI implementation strategy, enterprise AI solutions Indonesia, machine learning consulting Indonesia, AI automation consulting, konsultan AI Indonesia, AI ROI business, custom AI development, Manaira Labs";
 
 const {
   title,
@@ -18,6 +18,22 @@ const {
 } = Astro.props;
 
 const siteUrl = 'https://manairalabs.com';
+
+// BreadcrumbList for inner pages
+const pathSegments = Astro.url.pathname.split('/').filter(Boolean);
+const breadcrumbSchema = pathSegments.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": siteUrl },
+    ...pathSegments.map((segment: string, i: number) => ({
+      "@type": "ListItem",
+      "position": i + 2,
+      "name": segment.charAt(0).toUpperCase() + segment.slice(1).replace(/-/g, ' '),
+      "item": `${siteUrl}/${pathSegments.slice(0, i + 1).join('/')}`
+    }))
+  ]
+} : null;
 ---
 
 <!DOCTYPE html>
@@ -72,13 +88,37 @@ const siteUrl = 'https://manairalabs.com';
       "name": "Manaira Labs",
       "url": siteUrl,
       "logo": `${siteUrl}/icons/logo.png`,
-      "description": "AI Products & Solutions for Business",
+      "description": "AI consulting and implementation for Indonesian businesses. Custom AI development, strategy, and enterprise solutions.",
       "sameAs": [
         "https://linkedin.com/company/manairalabs",
         "https://twitter.com/manairalabs",
         "https://instagram.com/manairalabs"
       ]
     })} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Manaira Labs",
+      "url": siteUrl,
+      "description": "AI consulting, strategy, and implementation services for businesses in Indonesia",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Indonesia"
+      },
+      "serviceType": [
+        "AI Consulting",
+        "AI Strategy",
+        "Custom AI Development",
+        "Machine Learning Consulting",
+        "AI Implementation",
+        "Enterprise AI Solutions"
+      ],
+      "knowsLanguage": ["en", "id"]
+    })} />
+
+    {breadcrumbSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    )}
 
     <!-- Theme initialization -->
     <script is:inline>
