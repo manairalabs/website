@@ -174,14 +174,39 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="product-badge">FLAGSHIP</div>
           <div class="product-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+          </div>
+          <h3 class="product-name">Bicara Business</h3>
+          <p class="product-tagline">AI-Native Business Operations Platform</p>
+          <p class="product-desc">
+            19 integrated business modules — inbox, CRM, POS, inventory, HR, accounting, and more — all in one database with AI woven throughout. Includes Bicara Chat and Bicara Team built in.
+          </p>
+          <ul class="product-features">
+            <li>19+ integrated business modules</li>
+            <li>AI agents across all operations</li>
+            <li>WhatsApp-first CRM</li>
+            <li>Indonesian payment integration</li>
+            <li>No consultants required</li>
+          </ul>
+          <div class="product-pricing">
+            <span class="price">Rp 499K</span>
+            <span class="period">/month</span>
+          </div>
+          <a href="https://bicara.ai" target="_blank" rel="noopener" class="product-cta">Learn More</a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
             </svg>
           </div>
-          <h3 class="product-name">Bicara AI</h3>
+          <h3 class="product-name">Bicara Chat</h3>
           <p class="product-tagline">AI Customer Service Automation</p>
           <p class="product-desc">
             Omnichannel inbox that unifies WhatsApp, Instagram, Messenger, Telegram, and email.
-            AI auto-replies handle 80% of inquiries 24/7.
+            AI auto-replies handle inquiries 24/7. Also included in Bicara Business.
           </p>
           <ul class="product-features">
             <li>7-channel unified inbox</li>
@@ -191,10 +216,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <li>Broadcast campaigns</li>
           </ul>
           <div class="product-pricing">
-            <span class="price">Rp 1.5 juta</span>
-            <span class="period">/month</span>
+            <span class="price">Contact</span>
+            <span class="period">for pricing</span>
           </div>
-          <a href="https://bicara.ai/chat" target="_blank" rel="noopener" class="product-cta">Learn More</a>
+          <a href="https://bicara.ai/inbox" target="_blank" rel="noopener" class="product-cta">Learn More</a>
         </div>
 
         <div class="product-card">
@@ -207,7 +232,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <p class="product-tagline">AI Workforce Management</p>
           <p class="product-desc">
             Keep your store running smoothly. Shift scheduling, task management, and inventory tracking
-            with AI-powered insights for owners.
+            with AI-powered insights for owners. Also included in Bicara Business.
           </p>
           <ul class="product-features">
             <li>Smart shift scheduling</li>
@@ -220,33 +245,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <span class="price">Contact</span>
             <span class="period">for pricing</span>
           </div>
-          <a href="https://bicara.ai/team" target="_blank" rel="noopener" class="product-cta">Learn More</a>
-        </div>
-
-        <div class="product-card">
-          <div class="product-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-            </svg>
-          </div>
-          <h3 class="product-name">Bicara Business Platform</h3>
-          <p class="product-tagline">Complete Business Management</p>
-          <p class="product-desc">
-            All your business apps in one place. Sales, inventory, HR, accounting, and AI agents
-            that work like digital employees across your operations.
-          </p>
-          <ul class="product-features">
-            <li>19+ integrated business modules</li>
-            <li>AI agents across all operations</li>
-            <li>WhatsApp-first CRM</li>
-            <li>Indonesian payment integration</li>
-            <li>No consultants required</li>
-          </ul>
-          <div class="product-pricing">
-            <span class="price">Contact</span>
-            <span class="period">for pricing</span>
-          </div>
-          <a href="https://bicara.ai" target="_blank" rel="noopener" class="product-cta">Learn More</a>
+          <a href="https://bicara.ai/erp" target="_blank" rel="noopener" class="product-cta">Learn More</a>
         </div>
       </div>
     </div>
@@ -477,9 +476,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="form-field">
               <select name="interest" required>
                 <option value="" disabled selected>What are you interested in?</option>
-                <option value="bicara-ai">Bicara AI - Customer Service</option>
-                <option value="bicara-team">Bicara Team - Workforce</option>
-                <option value="bicara-platform">Bicara Business Platform</option>
+                <option value="bicara-business">Bicara Business — Full Platform</option>
+                <option value="bicara-chat">Bicara Chat — Customer Service AI</option>
+                <option value="bicara-team">Bicara Team — Workforce Management</option>
                 <option value="consulting">Custom AI Project</option>
                 <option value="demo">Schedule a Demo</option>
               </select>
