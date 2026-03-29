@@ -3,7 +3,7 @@ title: "Why 95% of AI Pilots Fail (And How Your Team Can Be in the Top 5%)"
 description: "Learn why most enterprise AI pilots fail and how a structured 90-day implementation strategy helps digital leaders succeed. Includes governance, quick wins, and ROI metrics."
 pubDate: 2026-03-22
 author: "Manaira Labs"
-heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200"
+heroImage: "/images/blog/20260322-ai-pilots-fail-90-day-roadmap.webp"
 category: "Insights"
 tags:
   - "AI implementation"

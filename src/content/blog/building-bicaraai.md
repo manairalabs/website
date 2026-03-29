@@ -4,7 +4,7 @@ description: "AI consulting case study: how Manaira Labs built an AI customer se
 pubDate: 2024-11-28
 author: "Manaira Labs"
 tags: ["Case Study", "AI Development", "BicaraAI", "AI Implementation"]
-heroImage: "/images/blog/bicaraai-build.png"
+heroImage: "/images/blog/building-bicaraai.webp"
 category: "Case Study"
 lang: "en"
 hreflangSlug: "membangun-bicaraai"

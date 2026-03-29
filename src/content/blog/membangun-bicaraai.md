@@ -4,7 +4,7 @@ description: "Studi kasus konsultan AI Indonesia: bagaimana Manaira Labs membang
 pubDate: 2024-11-28
 author: "Manaira Labs"
 tags: ["Studi Kasus", "Pengembangan AI", "BicaraAI", "Implementasi AI"]
-heroImage: "/images/blog/bicaraai-build.png"
+heroImage: "/images/blog/membangun-bicaraai.webp"
 category: "Case Study"
 lang: "id"
 hreflangSlug: "building-bicaraai"

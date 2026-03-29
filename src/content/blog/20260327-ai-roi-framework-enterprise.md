@@ -3,7 +3,7 @@ title: "How to Measure AI ROI (And Convince Your Board to Fund Phase 2)"
 description: "Learn how enterprise leaders measure AI ROI across 3 value types. Our 5-step framework helps you justify $2M+ AI investments and secure board approval for scaling."
 pubDate: 2026-03-27
 author: "Manaira Labs"
-heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200"
+heroImage: "/images/blog/20260327-ai-roi-framework-enterprise.webp"
 category: "Insights"
 tags:
   - "AI ROI"

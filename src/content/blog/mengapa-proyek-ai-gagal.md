@@ -4,7 +4,7 @@ description: "Mengapa proyek AI gagal dan bagaimana cara sukses. Insight dari ko
 pubDate: 2024-12-15
 author: "Manaira Labs"
 tags: ["Strategi AI", "Enterprise AI", "Best Practices"]
-heroImage: "/images/blog/ai-projects-fail.png"
+heroImage: "/images/blog/mengapa-proyek-ai-gagal.webp"
 category: "Insights"
 lang: "id"
 hreflangSlug: "why-ai-projects-fail"

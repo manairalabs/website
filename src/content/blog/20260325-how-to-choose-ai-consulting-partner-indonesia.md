@@ -3,7 +3,7 @@ title: "How to Choose the Right AI Consulting Partner in Indonesia: A Decision F
 description: "A practical decision framework for selecting the right AI consulting partner in Indonesia. Learn how to evaluate capabilities, assess implementation experience, and avoid common pitfalls when choosing an AI strategy partner."
 pubDate: 2026-03-25
 author: "Manaira Labs"
-heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200"
+heroImage: "/images/blog/20260325-how-to-choose-ai-consulting-partner-indonesia.webp"
 category: "Insights"
 tags:
   - "AI consulting"

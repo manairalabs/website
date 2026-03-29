@@ -4,7 +4,7 @@ description: "Panduan ROI AI dari konsultan AI Indonesia. Ekspektasi realistis r
 pubDate: 2026-01-30
 author: "Manaira Labs"
 tags: ["Strategi AI", "ROI", "Bisnis"]
-heroImage: "/images/blog/ai-roi.png"
+heroImage: "/images/blog/roi-ai-ekspektasi-realistis.webp"
 category: "Insights"
 lang: "id"
 hreflangSlug: "ai-roi-expectations"

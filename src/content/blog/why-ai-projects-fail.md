@@ -4,7 +4,7 @@ description: "Most AI initiatives never reach production. AI strategy consulting
 pubDate: 2024-12-15
 author: "Manaira Labs"
 tags: ["AI Strategy", "Enterprise AI", "Best Practices"]
-heroImage: "/images/blog/ai-projects-fail.png"
+heroImage: "/images/blog/why-ai-projects-fail.webp"
 category: "Insights"
 lang: "en"
 hreflangSlug: "mengapa-proyek-ai-gagal"

@@ -4,7 +4,7 @@ description: "Realistic AI ROI expectations for businesses. From AI consulting t
 pubDate: 2026-01-30
 author: "Manaira Labs"
 tags: ["AI Strategy", "ROI", "Business"]
-heroImage: "/images/blog/ai-roi.png"
+heroImage: "/images/blog/ai-roi-expectations.webp"
 category: "Insights"
 lang: "en"
 hreflangSlug: "roi-ai-ekspektasi-realistis"
