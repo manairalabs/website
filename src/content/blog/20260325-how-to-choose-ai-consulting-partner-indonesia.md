@@ -156,7 +156,7 @@ Avoid open-ended statements like "deliver an AI solution." Specify the behavior 
 
 At Manaira Labs, we approach **custom AI solutions Indonesia** differently.
 
-We don't position ourselves as pure strategists. We're builders. [We built Bicara](/), an AI platform serving Indonesian SMEs, which means we've solved the same problems your team faces: integrating with local payment systems, handling WhatsApp messaging at scale, designing AI agents that work with imperfect data, complying with Indonesian regulations.
+We don't position ourselves as pure strategists. We're builders. We've shipped AI systems into Indonesian businesses, which means we've solved the same problems your team faces: integrating with local payment systems, handling WhatsApp messaging at scale, designing AI agents that work with imperfect data, complying with Indonesian regulations.
 
 When we consult, we bring:
 

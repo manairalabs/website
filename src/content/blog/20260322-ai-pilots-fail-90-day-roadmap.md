@@ -276,7 +276,7 @@ The board wants to see: We invested $X. We captured $Y in value. Here's the proo
 
 Ninety days sounds fast, but it's realistic if you have experienced guides. Companies that work with [AI implementation consultants](/consulting) move faster because they've seen the patterns, they know which corners to cut and which ones are critical, and they have frameworks that compress the timeline.
 
-At Manaira Labs, we've guided enterprises through this process—from a struggling pilot to a production AI system with clear ROI. We built [Bicara](https://bicara.ai), an AI platform for Indonesian SMEs that demonstrates what thoughtful AI implementation looks like at scale.
+At Manaira Labs, we've guided enterprises through this process—from a struggling pilot to a production AI system with clear ROI. Our team has shipped AI into Indonesian operations across customer service, workflow automation, and back-office systems, so we know what thoughtful implementation looks like at scale.
 
 We can help you navigate the pitfalls, establish the right governance, and get to your first quick win faster.
 
