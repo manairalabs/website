@@ -40,14 +40,14 @@
     --darker: #f0f1f2;
 
     /* Brand Colors - adjusted for light theme */
-    --primary: #0099aa;
-    --primary-dim: rgba(0, 153, 170, 0.5);
-    --primary-glow: rgba(0, 153, 170, 0.15);
+    --primary: #e02952;
+    --primary-dim: rgba(224, 41, 82, 0.5);
+    --primary-glow: rgba(224, 41, 82, 0.15);
     --secondary: #5a4ad4;
     --accent: #e02952;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #0099aa 0%, #5a4ad4 100%);
+    --gradient-primary: linear-gradient(135deg, #e02952 0%, #5a4ad4 100%);
     --gradient-accent: linear-gradient(135deg, #e02952 0%, #e05530 100%);
     --gradient-dark: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
 
@@ -83,14 +83,14 @@
     --darker: #050505;
 
     /* Brand Colors */
-    --primary: #00f0ff;
-    --primary-dim: rgba(0, 240, 255, 0.5);
-    --primary-glow: rgba(0, 240, 255, 0.15);
+    --primary: #ff3333;
+    --primary-dim: rgba(255, 51, 51, 0.5);
+    --primary-glow: rgba(255, 51, 51, 0.15);
     --secondary: #7b61ff;
     --accent: #ff3366;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #00f0ff 0%, #7b61ff 100%);
+    --gradient-primary: linear-gradient(135deg, #ff3333 0%, #7b61ff 100%);
     --gradient-accent: linear-gradient(135deg, #ff3366 0%, #ff6b35 100%);
     --gradient-dark: linear-gradient(180deg, #0a0a0a 0%, #000000 100%);
 
@@ -174,8 +174,8 @@ body {
 }
 
 @keyframes antennaPulse {
-    0%, 100% { filter: drop-shadow(0 0 5px #00f0ff); }
-    50% { filter: drop-shadow(0 0 15px #00f0ff) drop-shadow(0 0 25px #00f0ff); }
+    0%, 100% { filter: drop-shadow(0 0 5px #ff3333); }
+    50% { filter: drop-shadow(0 0 15px #ff3333) drop-shadow(0 0 25px #ff3333); }
 }
 
 /* Robot eyes happy animation */
@@ -787,8 +787,8 @@ body {
     display: inline-flex;
     align-items: center;
     gap: var(--space-xs);
-    background: rgba(0, 240, 255, 0.1);
-    border: 1px solid rgba(0, 240, 255, 0.3);
+    background: rgba(255, 51, 51, 0.1);
+    border: 1px solid rgba(255, 51, 51, 0.3);
     padding: var(--space-xs) var(--space-sm);
     border-radius: 100px;
     margin-bottom: var(--space-lg);
@@ -1458,7 +1458,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 240, 255, 0.1);
+    background: rgba(255, 51, 51, 0.1);
     border-radius: 8px;
     color: var(--primary);
 }
@@ -1671,7 +1671,7 @@ body {
 
 .product-card.featured {
     border-color: var(--primary);
-    background: rgba(0, 240, 255, 0.03);
+    background: rgba(255, 51, 51, 0.03);
 }
 
 .product-badge {
@@ -1693,7 +1693,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 240, 255, 0.1);
+    background: rgba(255, 51, 51, 0.1);
     border-radius: 12px;
     color: var(--primary);
     margin-bottom: var(--space-lg);
@@ -1895,8 +1895,8 @@ body {
 }
 
 .compare-side.new {
-    background: rgba(0, 240, 255, 0.05);
-    border: 1px solid rgba(0, 240, 255, 0.2);
+    background: rgba(255, 51, 51, 0.05);
+    border: 1px solid rgba(255, 51, 51, 0.2);
 }
 
 .compare-title {
