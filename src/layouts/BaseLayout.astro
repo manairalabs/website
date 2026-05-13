@@ -283,6 +283,76 @@ const breadcrumbSchema = pathSegments.length > 0 ? {
         </div>
     </footer>
 
+    <script is:inline>
+      // Shared lead-form submit handler for the secondary CTA forms
+      // (class="cta-form") scattered across home / consulting / projects / team.
+      // The dedicated /contact form (class="contact-form") has its own
+      // page-level handler with richer success messaging.
+      (function () {
+        var form = document.querySelector('form.cta-form#contactForm');
+        if (!form || form.dataset.leadformBound) return;
+        form.dataset.leadformBound = '1';
+
+        var submitBtn = form.querySelector('button[type="submit"]');
+        var submitUrl = 'https://dashboard.bicara.ai/api/public/lead-forms/019e1ea5-4395-7b24-88c5-65ed2c95c167/submit';
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          var data = new FormData(form);
+          var name = (data.get('name') || '').toString().trim();
+          var email = (data.get('email') || '').toString().trim();
+          var company = (data.get('company') || '').toString().trim();
+          var interest = (data.get('interest') || '').toString().trim();
+          var message = (data.get('message') || '').toString().trim();
+
+          if (!name || !email) {
+            alert('Name and email are required.');
+            return;
+          }
+
+          submitBtn.classList.add('loading');
+          submitBtn.disabled = true;
+
+          var qs = new URLSearchParams(window.location.search);
+
+          fetch(submitUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              name: name,
+              email: email,
+              company: company,
+              message: message,
+              interest: interest,
+              landingPage: window.location.pathname,
+              utm_source: qs.get('utm_source') || '',
+              utm_medium: qs.get('utm_medium') || '',
+              utm_campaign: qs.get('utm_campaign') || '',
+              utm_content: qs.get('utm_content') || '',
+              utm_term: qs.get('utm_term') || ''
+            })
+          })
+            .then(function (res) {
+              if (res.ok) {
+                submitBtn.classList.remove('loading');
+                submitBtn.classList.add('success');
+                form.reset();
+                return;
+              }
+              return res.json().then(function (d) {
+                throw new Error((d && (d.error || d.message)) || 'Failed to submit. Please try again.');
+              });
+            })
+            .catch(function (err) {
+              submitBtn.classList.remove('loading');
+              submitBtn.disabled = false;
+              alert((err && err.message) || 'Something went wrong. Please try again.');
+            });
+        });
+      })();
+    </script>
+
     <script is:inline src="/scripts/main.js"></script>
 </body>
 </html>
