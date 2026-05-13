@@ -74,7 +74,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <div class="contact-form-wrapper">
-          <form class="contact-form" id="contactForm" action="https://formspree.io/f/mqardgdj" method="POST">
+          <div id="contactFormSuccess" class="form-status form-status--success" hidden>
+            Thanks — a Manaira Labs engineer will reply within one business day.
+          </div>
+          <div id="contactFormError" class="form-status form-status--error" hidden></div>
+          <form class="contact-form" id="contactForm" novalidate>
             <div class="form-row">
               <div class="form-field">
                 <input type="text" name="name" placeholder="Your Name" required>
@@ -401,4 +405,96 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     0%, 100% { opacity: 1; }
     50% { opacity: 0.5; }
   }
+
+  .form-status {
+    padding: var(--space-md);
+    border-radius: 8px;
+    margin-bottom: var(--space-md);
+    font-size: 0.95rem;
+  }
+  .form-status[hidden] { display: none; }
+  .form-status--success {
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    color: rgb(134, 239, 172);
+  }
+  .form-status--error {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: rgb(252, 165, 165);
+  }
 </style>
+
+<script is:inline>
+  (function () {
+    var form = document.getElementById('contactForm');
+    if (!form) return;
+
+    var successEl = document.getElementById('contactFormSuccess');
+    var errorEl = document.getElementById('contactFormError');
+    var submitBtn = form.querySelector('button[type="submit"]');
+
+    // Manaira Labs lead-form on the Bicara dogfood org. Stable UUID.
+    var submitUrl = 'https://dashboard.bicara.ai/api/public/lead-forms/019e1ea5-4395-7b24-88c5-65ed2c95c167/submit';
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      successEl.hidden = true;
+      errorEl.hidden = true;
+
+      var data = new FormData(form);
+      var name = (data.get('name') || '').toString().trim();
+      var email = (data.get('email') || '').toString().trim();
+      var company = (data.get('company') || '').toString().trim();
+      var interest = (data.get('interest') || '').toString().trim();
+      var message = (data.get('message') || '').toString().trim();
+
+      if (!name || !email || !message) {
+        errorEl.textContent = 'Name, email, and message are required.';
+        errorEl.hidden = false;
+        return;
+      }
+
+      submitBtn.classList.add('loading');
+      submitBtn.disabled = true;
+
+      var qs = new URLSearchParams(window.location.search);
+
+      fetch(submitUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          company: company,
+          message: message,
+          interest: interest,
+          landingPage: window.location.pathname,
+          utm_source: qs.get('utm_source') || '',
+          utm_medium: qs.get('utm_medium') || '',
+          utm_campaign: qs.get('utm_campaign') || '',
+          utm_content: qs.get('utm_content') || '',
+          utm_term: qs.get('utm_term') || ''
+        })
+      })
+        .then(function (res) {
+          if (res.ok) {
+            form.reset();
+            submitBtn.classList.remove('loading');
+            submitBtn.classList.add('success');
+            successEl.hidden = false;
+            return;
+          }
+          return res.json().then(function (d) {
+            throw new Error((d && (d.error || d.message)) || 'Failed to submit. Please try again.');
+          });
+        })
+        .catch(function (err) {
+          submitBtn.classList.remove('loading');
+          submitBtn.disabled = false;
+          errorEl.textContent = (err && err.message) || 'Something went wrong. Please try again.';
+          errorEl.hidden = false;
+        });
+    });
+  })();
+</script>
