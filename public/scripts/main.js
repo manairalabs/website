@@ -441,59 +441,10 @@ function animateCounter(card) {
     }
 }
 
-// ============================================
-// FORM HANDLING
-// ============================================
-const contactForm = document.getElementById('contactForm');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-
-        const submitBtn = contactForm.querySelector('.btn-submit');
-        const formData = new FormData(contactForm);
-
-        // Validate
-        if (!formData.get('name') || !formData.get('email')) {
-            alert('Please fill in all required fields.');
-            return;
-        }
-
-        // Loading state
-        submitBtn.classList.add('loading');
-        submitBtn.disabled = true;
-
-        try {
-            // Send to Formspree
-            const response = await fetch(contactForm.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-
-            if (response.ok) {
-                // Success state
-                submitBtn.classList.remove('loading');
-                submitBtn.classList.add('success');
-                contactForm.reset();
-
-                // Reset button after delay
-                setTimeout(() => {
-                    submitBtn.classList.remove('success');
-                    submitBtn.disabled = false;
-                }, 3000);
-            } else {
-                throw new Error('Form submission failed');
-            }
-        } catch (error) {
-            submitBtn.classList.remove('loading');
-            submitBtn.disabled = false;
-            alert('Something went wrong. Please try again.');
-        }
-    });
-}
+// Contact-form submit handling lives in BaseLayout.astro (shared CTA forms)
+// and src/pages/contact.astro (dedicated contact page). The previous
+// Formspree-based handler that lived here would double-submit and surface
+// a "Something went wrong" alert despite a successful lead capture.
 
 // ============================================
 // PARALLAX EFFECTS
